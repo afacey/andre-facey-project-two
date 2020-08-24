@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  padding-top: 2rem;
+  background-size: cover;
+  background-position: top center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-transform: uppercase;
+
+    .logo {
+      font-family: 'Playfair Display SC', serif;
+      color: $color-highlight-2;
+      font-size: 3.46rem;
+      letter-spacing: 1px;
+    }
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child) { margin-right: 3rem; }
+
+      a {
+        color: $color-light;
+      }
+
+      .active-link { color: $color-highlight-2 }
+
+    }
+  }
+
+  
+}
