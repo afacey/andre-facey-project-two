@@ -17,7 +17,7 @@ header {
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     text-transform: uppercase;
 
     .logo {
@@ -29,16 +29,36 @@ header {
 
     li {
       display: inline-block;
-
       &:not(:last-child) { margin-right: 3rem; }
+    }
 
-      a {
-        color: $color-light;
+    a {
+      color: $color-light;
+      letter-spacing: 1px;
+      position: relative;
+
+      &:hover,
+      &:focus {
+        color: $color-highlight-2;
+
+        &::after { opacity: 1;}
+        
       }
 
-      .active-link { color: $color-highlight-2 }
-
+      &::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        background-color: $color-highlight-2;
+        opacity: 0;
+        transition: opacity .3s ease;
+      }
     }
+
+    .link-active { color: $color-highlight-2 }
   }
 
   

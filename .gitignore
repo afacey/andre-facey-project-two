@@ -1,3 +1,5 @@
 .DS_Store
 .vscode
 Beach Stay
+node_modules
+*.js*
