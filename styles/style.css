@@ -308,21 +308,21 @@ header {
     bottom: -12%;
     left: 0; }
 
-.home .visit {
+.home .spotlight {
   padding: 15rem 0 10rem;
   background-color: #fff; }
-  .home .visit .flex-container {
+  .home .spotlight .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
-  .home .visit-content {
+  .home .spotlight-content {
     width: calc(70%); }
-    .home .visit-content h2,
-    .home .visit-content p {
+    .home .spotlight-content h2,
+    .home .spotlight-content p {
       margin-bottom: 2rem; }
-  .home .visit .img-container {
+  .home .spotlight .img-container {
     width: calc(25%); }
-    .home .visit .img-container img {
+    .home .spotlight .img-container img {
       box-shadow: -15px 15px 0 #50E3C2; }
 
 .home .gallery {
