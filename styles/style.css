@@ -213,6 +213,7 @@ li {
   padding: 0; }
 
 img {
+  width: 100%;
   display: block; }
 
 ul {
@@ -306,8 +307,6 @@ header {
     position: absolute;
     bottom: -12%;
     left: 0; }
-    .home header .img-container img {
-      width: 100%; }
 
 .home .visit {
   padding: 15rem 0 10rem;
@@ -325,3 +324,16 @@ header {
     width: calc(25%); }
     .home .visit .img-container img {
       box-shadow: -15px 15px 0 #50E3C2; }
+
+.home .gallery {
+  background-color: #D2F9F1;
+  padding: 10rem 0; }
+  .home .gallery .flex-container {
+    display: flex;
+    justify-content: space-between; }
+  .home .gallery .img-container {
+    width: calc(100% / 3 - 2%); }
+
+.home .features {
+  background-color: #fff;
+  padding: 10rem 0; }

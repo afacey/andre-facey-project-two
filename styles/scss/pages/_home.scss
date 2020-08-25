@@ -28,7 +28,6 @@
       position: absolute;
       bottom: -12%;
       left: 0;
-      img { width: 100%; }
     }
   }
 
@@ -61,6 +60,29 @@
       }
       
     }
+
+  }
+
+  // ------------------------------ GALLERY SECTION
+
+  .gallery {
+    background-color: $color-highlight-2;
+    padding: 10rem 0;
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img-container {
+      width: calc(100% / 3 - 2%);
+    }
+  }
+
+  // ------------------------------ FEATURES SECTION
+  .features {
+    background-color: #fff;
+    padding: 10rem 0;
 
   }
 }
