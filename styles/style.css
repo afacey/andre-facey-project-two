@@ -372,14 +372,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end; }
-    .home .blogs .blog-container:nth-of-type(1n) {
+    .home .blogs .blog-container:nth-of-type(odd) {
       margin-bottom: 6rem; }
-  .home .blogs .blog-container:nth-of-type(1n) img {
+  .home .blogs .blog-container:nth-of-type(odd) img {
     box-shadow: 15px 15px 0 #50E3C2; }
-  .home .blogs .blog-container:nth-of-type(2n) .img-container {
-    order: 1; }
-  .home .blogs .blog-container:nth-of-type(2n) img {
-    box-shadow: -15px 15px 0 #50E3C2; }
+  .home .blogs .blog-container:nth-of-type(even) {
+    text-align: right; }
+    .home .blogs .blog-container:nth-of-type(even) .img-container {
+      order: 1; }
+    .home .blogs .blog-container:nth-of-type(even) img {
+      box-shadow: -15px 15px 0 #50E3C2; }
   .home .blogs .img-container {
     width: calc(40%); }
   .home .blogs .blog-post {
