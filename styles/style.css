@@ -221,16 +221,29 @@ ul {
 a {
   text-decoration: none; }
 
+h2 {
+  color: #0C5F4C; }
+
+p {
+  line-height: 32px; }
+
 .wrapper {
   max-width: 1200px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto; }
+
+.btn {
+  display: inline-block;
+  background-color: #063974;
+  color: #FAFFFE;
+  font-family: 'Playfair Display SC', serif;
+  padding: 15px; }
 
 body {
   font-family: 'Lato', sans-serif; }
 
 header {
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 2rem;
   background-size: cover;
   background-position: top center;
@@ -295,3 +308,20 @@ header {
     left: 0; }
     .home header .img-container img {
       width: 100%; }
+
+.home .visit {
+  padding: 15rem 0 10rem;
+  background-color: #fff; }
+  .home .visit .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .home .visit-content {
+    width: calc(70%); }
+    .home .visit-content h2,
+    .home .visit-content p {
+      margin-bottom: 2rem; }
+  .home .visit .img-container {
+    width: calc(25%); }
+    .home .visit .img-container img {
+      box-shadow: -15px 15px 0 #50E3C2; }
