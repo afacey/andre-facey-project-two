@@ -31,7 +31,7 @@
     }
   }
 
-  // ------------------------------ VISIT SECTION
+  // ------------------------------ SPOTLIGHT SECTION
   .spotlight {
     padding: 15rem 0 10rem;
     background-color: #fff;
@@ -125,4 +125,54 @@
     }
 
   }
+
+  // ------------------------------ BLOGS SECTION
+
+  .blogs {
+    background-color: $color-highlight-2;
+    padding: 10rem 0;
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &:nth-of-type(1n) {
+        margin-bottom: 6rem;
+      }
+    }
+    // TODO style images to extend to edge of viewport and overlap sections
+    .blog-container:nth-of-type(1n) {
+      img {
+        box-shadow: 15px 15px 0 $color-highlight-1;
+      }
+    }
+
+    .blog-container:nth-of-type(2n) {
+      .img-container {
+        order: 1;
+      }
+      img {
+        box-shadow: -15px 15px 0 $color-highlight-1;
+      }
+    }
+
+    .img-container {
+      width: calc(40%);
+    }
+
+    .blog-post {
+      width: calc(40%);
+      h2,
+      p {
+        margin-bottom: 2rem; 
+      }
+    }
+  }
+
 }

@@ -361,3 +361,29 @@ header {
   .home .features .feature-content h3 {
     color: #0C5F4C;
     margin-bottom: 1rem; }
+
+.home .blogs {
+  background-color: #D2F9F1;
+  padding: 10rem 0; }
+  .home .blogs .flex-container {
+    display: flex;
+    flex-direction: column; }
+  .home .blogs .blog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .home .blogs .blog-container:nth-of-type(1n) {
+      margin-bottom: 6rem; }
+  .home .blogs .blog-container:nth-of-type(1n) img {
+    box-shadow: 15px 15px 0 #50E3C2; }
+  .home .blogs .blog-container:nth-of-type(2n) .img-container {
+    order: 1; }
+  .home .blogs .blog-container:nth-of-type(2n) img {
+    box-shadow: -15px 15px 0 #50E3C2; }
+  .home .blogs .img-container {
+    width: calc(40%); }
+  .home .blogs .blog-post {
+    width: calc(40%); }
+    .home .blogs .blog-post h2,
+    .home .blogs .blog-post p {
+      margin-bottom: 2rem; }
