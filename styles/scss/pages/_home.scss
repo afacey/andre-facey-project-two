@@ -174,5 +174,19 @@
       }
     }
   }
+  // ------------------------------ CONTEST SECTION
+  .contest {
+    background-color: #fff;
+    padding-bottom: 15rem;
 
+    .wrapper {
+      padding-top: 15rem;
+      text-align: center;
+    }
+
+    h2,
+    p {
+      margin-bottom: 2rem;
+    }
+  }
 }

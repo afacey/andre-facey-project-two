@@ -387,3 +387,13 @@ header {
     .home .blogs .blog-post h2,
     .home .blogs .blog-post p {
       margin-bottom: 2rem; }
+
+.home .contest {
+  background-color: #fff;
+  padding-bottom: 15rem; }
+  .home .contest .wrapper {
+    padding-top: 15rem;
+    text-align: center; }
+  .home .contest h2,
+  .home .contest p {
+    margin-bottom: 2rem; }
