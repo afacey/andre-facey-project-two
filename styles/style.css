@@ -337,3 +337,27 @@ header {
 .home .features {
   background-color: #fff;
   padding: 10rem 0; }
+  .home .features .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between; }
+  .home .features .feature-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: calc(50% - 2rem);
+    margin-bottom: 4rem; }
+    .home .features .feature-container:nth-last-of-type(1), .home .features .feature-container:nth-last-of-type(2) {
+      margin-bottom: 0; }
+  .home .features .icon-container {
+    background-color: #50E3C2;
+    border-radius: 50%;
+    margin-right: 1.5rem; }
+    .home .features .icon-container i {
+      color: #fff;
+      padding: 10px; }
+  .home .features .feature-content h3 {
+    color: #0C5F4C;
+    margin-bottom: 1rem; }
