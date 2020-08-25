@@ -233,7 +233,8 @@ header {
   min-height: 100vh;
   padding-top: 2rem;
   background-size: cover;
-  background-position: top center; }
+  background-position: top center;
+  position: relative; }
   header nav {
     display: flex;
     justify-content: space-between;
@@ -271,18 +272,26 @@ header {
 
 .home header {
   background-image: url(../assets/home-image-1.jpg); }
-
-.home h1 {
-  color: #0C5F4C;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 6rem;
-  letter-spacing: 9px; }
-  .home h1 span {
-    display: block;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 11.12rem;
-    color: #063974;
-    margin-left: -20px; }
+  .home header h1 {
+    color: #0C5F4C;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    letter-spacing: 9px; }
+    .home header h1 span {
+      display: block;
+      font-family: 'Playfair Display SC', serif;
+      font-size: 11.12rem;
+      color: #063974;
+      margin-left: -20px; }
+  .home header .img-container {
+    max-width: calc(1200px * .4);
+    width: calc(40%);
+    position: absolute;
+    bottom: -12%;
+    left: 0; }
+    .home header .img-container img {
+      width: 100%; }
