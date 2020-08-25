@@ -189,4 +189,19 @@
       margin-bottom: 2rem;
     }
   }
+
+  // ------------------------------ FOOTER SECTION
+  footer {
+    background-color: $color-dark;
+    color: $color-light;
+    text-align: center;
+    padding: 1rem;
+
+    a {
+      color: $color-light;
+      text-decoration: underline;
+      padding: 1rem 1rem 1rem 0;
+    }
+
+  }
 }
