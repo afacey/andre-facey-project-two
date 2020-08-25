@@ -409,3 +409,15 @@ header {
     color: #FAFFFE;
     text-decoration: underline;
     padding: 1rem 1rem 1rem 0; }
+
+.blog header {
+  background-image: url(../assets/blog-image-1.jpg);
+  min-height: 60vh; }
+  .blog header h1 {
+    color: #FAFFFE;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 6rem;
+    letter-spacing: 9px; }
