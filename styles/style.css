@@ -284,6 +284,16 @@ header {
     header nav .link-active {
       color: #50E3C2; }
 
+footer {
+  background-color: #2C2C2C;
+  color: #FAFFFE;
+  text-align: center;
+  padding: 1rem; }
+  footer a {
+    color: #FAFFFE;
+    text-decoration: underline;
+    padding: 1rem 1rem 1rem 0; }
+
 .home header {
   background-image: url(../assets/home-image-1.jpg); }
   .home header h1 {
@@ -399,16 +409,6 @@ header {
   .home .contest h2,
   .home .contest p {
     margin-bottom: 2rem; }
-
-.home footer {
-  background-color: #2C2C2C;
-  color: #FAFFFE;
-  text-align: center;
-  padding: 1rem; }
-  .home footer a {
-    color: #FAFFFE;
-    text-decoration: underline;
-    padding: 1rem 1rem 1rem 0; }
 
 .blog header {
   background-image: url(../assets/blog-image-1.jpg);
