@@ -95,6 +95,9 @@
 
 }
 
+// ------------------------------ MEDIA QUERIES
+
+// ------------------ MAX WIDTH 768px
 @media (max-width: 768px) {
   .blog main { padding-bottom: 2rem }
 
@@ -128,6 +131,7 @@
   }
 }
 
+// ------------------ MAX WIDTH 480px
 @media (max-width: 480px) {
   .blog .comment-container {
     flex-direction: column;
