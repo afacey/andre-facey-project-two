@@ -16,4 +16,104 @@
       letter-spacing: 9px;
     }
   }
+
+  main {
+    padding: 10rem 0;
+    & > .flex-container {
+      display: flex;
+      justify-content: space-between;
+      // border: 2px solid red;
+    }
+  }
+
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+    // ratio measured in PSD
+    width: calc(300 / 480 * 100%);
+  }
+
+  .blog-post-content {
+    border: 5px solid $color-highlight-1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    .img-container { margin-bottom: 3rem; }
+
+    h3 { margin-bottom: 1rem }
+
+    .blog-content-date {
+      color: $color-secondary;
+      font-size: 1.8rem;
+    }
+    p { margin-bottom: 2rem;}
+  }
+
+  .blog-post-comments {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+
+    .img-container { width: calc(25% - 2rem) }
+    .comment-content {
+      width: 75%;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    fieldset {
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      // TODO move into general partial
+      padding: 0;
+      margin: 0 0 2rem 0;
+
+      input {
+        width: calc(50% - 2rem);
+        border-color: transparent transparent $color-highlight-1 transparent;
+        padding: 1rem;
+      }
+    }
+
+    textarea {
+      resize: none;
+      border-color: $color-highlight-1;
+      margin-bottom: 3rem;
+    }
+  }
+
+  aside {
+    width: calc(110 / 480 * 100%);
+
+    // TODO fix spacing between containers
+    & > div,
+    &.content > div {
+      margin-bottom: 2rem;
+    }
+    h4 {
+      color: $color-primary;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: $color-secondary;
+    }
+
+    ul { 
+      // TODO style bullet points
+      // https://www.w3schools.com/howto/howto_css_bullet_color.asp
+    }
+  }
+
+
 }
