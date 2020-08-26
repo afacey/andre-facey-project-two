@@ -13,10 +13,25 @@
 </head>
 <body class="contact">
   <header>
-    <!-- TODO skip links -->
-    <div class="wrapper flex-container">
-      <nav>
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#contact-form">Skip to contact form</a></li>
+        <li><a href="#contact-socials">Skip to social media links</a></li>
+        <li><a href="#contact-email">Skip to contact email address</a></li>
+        <li><a href="#contact-address">Skip to office address</a></li>
+      </ul>
+    </nav><!-- ./skip-links -->
+    <div class="wrapper">
+      <nav class="main-nav">
         <p class="logo">Beachstays</p>
+
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu" class="menu-button visuallyHidden">
+        <label class="menu" for="menu">
+          <span class="menu-bar" aria-hidden=“true”></span>
+          <span class="sr-only">Click here to toggle the navigation menu</span>
+        </label>
+        <!-- ./hamburger menu -->
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
@@ -35,7 +50,7 @@
     <div class="wrapper">
       <div class="flex-container">
 
-        <section class="contact-form">
+        <section id="contact-form" class="contact-form">
           <form action="#">
             <fieldset>
               <label class="sr-only" for="name">Name</label>
@@ -54,16 +69,16 @@
       </section><!-- ./contact-form -->
     
         <aside>
-          <ul class="socials">
+          <ul id="contact-socials" class="socials">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
           </ul><!-- ./socials -->
 
-          <a href="#">info@email.com</a>
+          <a id="contact-email" href="#">info@email.com</a>
           
-          <ul class="address">
+          <ul id="contact-address" class="address">
             <li>123 - 456 - 7890</li>
             <li>123 Queen Street West,</li>
             <li>Unit 10</li>

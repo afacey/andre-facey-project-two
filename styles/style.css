@@ -254,29 +254,29 @@ header {
   header .wrapper {
     flex: 1;
     position: relative; }
-  header nav {
+  header .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase; }
-    header nav .logo {
+    header .main-nav .logo {
       font-family: 'Playfair Display SC', serif;
       color: #50E3C2;
       font-size: 3.46rem;
       letter-spacing: 1px; }
-    header nav li {
+    header .main-nav li {
       display: inline-block; }
-      header nav li:not(:last-child) {
+      header .main-nav li:not(:last-child) {
         margin-right: 3rem; }
-    header nav a {
+    header .main-nav a {
       color: #FAFFFE;
       letter-spacing: 1px;
       position: relative; }
-      header nav a:hover, header nav a:focus {
+      header .main-nav a:hover, header .main-nav a:focus {
         color: #50E3C2; }
-        header nav a:hover::after, header nav a:focus::after {
+        header .main-nav a:hover::after, header .main-nav a:focus::after {
           opacity: 1; }
-      header nav a::after {
+      header .main-nav a::after {
         content: '';
         height: 2px;
         position: absolute;
@@ -286,7 +286,7 @@ header {
         background-color: #50E3C2;
         opacity: 0;
         transition: opacity .3s ease; }
-    header nav .link-active {
+    header .main-nav .link-active {
       color: #50E3C2; }
 
 footer {
@@ -330,17 +330,83 @@ form {
     margin-bottom: 3rem;
     padding: 2rem; }
 
+/* ------------------- COLLAPSED NAV MENU - BARS */
+.menu-bar {
+  background-color: #50E3C2;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  position: relative; }
+
+.menu-bar::before,
+.menu-bar::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  position: absolute;
+  background-color: #50E3C2; }
+
+.menu-bar::before {
+  top: 1rem; }
+
+.menu-bar::after {
+  top: -1rem; }
+
+.menu-button:checked + .menu .menu-bar {
+  background-color: transparent; }
+
+.menu-button:checked + .menu .menu-bar::before {
+  transform: rotate(45deg);
+  top: 0; }
+
+.menu-button:checked + .menu .menu-bar::after {
+  transform: rotate(135deg);
+  top: 0; }
+
+/* ========================================================== HEADER SECTION */
+/* ---------------------- SKIP LINKS */
+.skip-links {
+  position: relative; }
+
+.skip-links a {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transform: translateX(-50%);
+  z-index: 100;
+  color: #FAFFFE;
+  background-color: #063974;
+  padding: 2rem; }
+
+.skip-links a:focus {
+  top: 0;
+  left: 50%; }
+
+/* -------------------COLLAPSED NAV MENU */
+.menu-button {
+  display: none; }
+
+.menu {
+  float: right;
+  padding: 1rem;
+  position: relative;
+  z-index: 10; }
+
+.menu:hover {
+  cursor: pointer; }
+
 @media (max-width: 480px) {
-  .contact h1 {
-    font-size: 5rem;
-    text-align: center;
-    top: 40%; }
   form fieldset {
     flex-direction: column; }
   form fieldset input {
     width: 100%; }
   footer {
     font-size: 1.4rem; } }
+
+@media (max-width: 800px) {
+  header nav ul {
+    display: none; } }
 
 .home header {
   background-image: url(../assets/home-image-1.jpg); }
@@ -630,5 +696,9 @@ form {
     margin-top: 6rem; } }
 
 @media (max-width: 480px) {
+  .contact h1 {
+    font-size: 5rem;
+    text-align: center;
+    top: 40%; }
   .contact .contact-form {
     padding: 25px; } }

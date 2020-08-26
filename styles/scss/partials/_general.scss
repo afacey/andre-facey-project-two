@@ -31,7 +31,7 @@ header {
     position: relative;
   }
 
-  nav {
+  .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,14 +143,93 @@ form {
 }
 
 
+
+/* ------------------- COLLAPSED NAV MENU - BARS */
+.menu-bar {
+  background-color: $color-highlight-1;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+}
+
+.menu-bar::before,
+.menu-bar::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  display: inline-block;
+  position: absolute;
+  background-color: $color-highlight-1;
+}
+
+.menu-bar::before { top: 1rem; }
+.menu-bar::after { top: -1rem; }
+
+.menu-button:checked + .menu .menu-bar { background-color: transparent; }
+
+.menu-button:checked + .menu .menu-bar::before { 
+  transform: rotate(45deg); 
+  top: 0;
+}
+
+.menu-button:checked + .menu .menu-bar::after { 
+  transform: rotate(135deg);
+  top: 0;
+}
+
+/* ========================================================== HEADER SECTION */
+
+/* ---------------------- SKIP LINKS */
+.skip-links {
+  position: relative;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transform: translateX(-50%);
+  z-index: 100;
+  color: $color-light;
+  background-color: $color-secondary;
+  padding: 2rem;
+}
+
+.skip-links a:focus {
+  top: 0;
+  left: 50%;
+}
+
+/* -------------------COLLAPSED NAV MENU */
+
+.menu-button { display: none; }
+
+.menu {
+  float: right;
+  padding: 1rem;
+  // display: none;
+  position: relative;
+  z-index: 10;
+}
+
+.menu:hover { cursor: pointer; }
+
+
+
+
+
+
+
 @media (max-width: 480px) {
-  .contact h1 {
-    font-size: 5rem;
-    text-align: center;
-    top: 40%;
-  }
   form fieldset { flex-direction: column;}
   form fieldset input { width: 100%; }
 
   footer { font-size: 1.4rem; }
+}
+
+@media (max-width: 800px) {
+  header nav ul {
+    display: none;
+  }
 }

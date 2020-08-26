@@ -99,5 +99,13 @@
 } 
 
 @media (max-width: 480px) {
-  .contact .contact-form { padding: 25px; }
+  .contact {
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+      top: 40%;
+    }
+
+    .contact-form { padding: 25px; }
+  }
 }

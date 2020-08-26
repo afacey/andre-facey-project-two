@@ -11,10 +11,24 @@
 </head>
 <body class="blog">
   <header>
-    <!-- TODO skip links -->
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#blog-post">Skip to blog content</a></li>
+        <li><a href="#blog-post-comments">Skip to blog comments</a></li>
+        <li><a href="#blog-submit-comment">Skip to submit comment</a></li>
+      </ul>
+    </nav><!-- ./skip-links -->
     <div class="wrapper">
-      <nav>
+      <nav class="main-nav">
         <p class="logo">Beachstays</p>
+
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu" class="menu-button visuallyHidden">
+        <label class="menu" for="menu">
+          <span class="menu-bar" aria-hidden=“true”></span>
+          <span class="sr-only">Click here to toggle the navigation menu</span>
+        </label>
+        <!-- ./hamburger menu -->
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
@@ -31,7 +45,7 @@
   <main id="main">
     <div class="flex-container">
 
-      <section class="blog-post">
+      <section id="blog-post" class="blog-post">
         <div class="blog-post-content">
           
           <div class="img-container">
@@ -63,7 +77,7 @@
           </div> <!-- ./wrapper -->
         </div><!-- ./blog-post-content -->
 
-        <div class="blog-post-comments">
+        <div id="blog-post-comments" class="blog-post-comments">
 
           <div class="wrapper flex-container">
             <h3>Comments:</h3>
@@ -87,7 +101,7 @@
               </div>
             </div><!-- ./comment-container -->
   
-            <form action="#">
+            <form id="blog-submit-comment" action="#">
               <fieldset>
                 <label class="sr-only" for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name">
