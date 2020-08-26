@@ -273,7 +273,7 @@ header {
       letter-spacing: 1px;
       position: relative; }
       header .main-nav a:hover, header .main-nav a:focus {
-        color: #50E3C2; }
+        color: #063974; }
         header .main-nav a:hover::after, header .main-nav a:focus::after {
           opacity: 1; }
       header .main-nav a::after {
@@ -364,7 +364,6 @@ form {
   transform: rotate(135deg);
   top: 0; }
 
-/* ========================================================== HEADER SECTION */
 /* ---------------------- SKIP LINKS */
 .skip-links {
   position: relative; }
@@ -390,8 +389,9 @@ form {
 .menu {
   float: right;
   padding: 1rem;
+  display: none;
   position: relative;
-  z-index: 10; }
+  z-index: 100; }
 
 .menu:hover {
   cursor: pointer; }
@@ -405,7 +405,43 @@ form {
     font-size: 1.4rem; } }
 
 @media (max-width: 800px) {
-  header nav ul {
+  /* ------COLLAPSED NAV MENU */
+  .menu-button,
+  .menu {
+    display: block; }
+  .menu-button:focus + .menu {
+    outline: 1px solid #063974; }
+  .menu-button:checked:focus + .menu {
+    outline: 1px solid #201E21; }
+  .menu-button:checked + .menu {
+    float: none;
+    position: fixed;
+    right: 10%; }
+  .menu-button:checked ~ ul {
+    padding: 50px 0;
+    top: 0; }
+  .main-nav ul {
+    background-color: #063974;
+    position: fixed;
+    top: -100%;
+    left: -0;
+    width: 100%;
+    z-index: 50;
+    transition: top .2s ease;
+    display: flex;
+    flex-direction: column; }
+  .main-nav li {
+    margin: 4rem 2rem;
+    text-align: center; }
+  .main-nav a {
+    color: #fff;
+    padding: 1.5rem 20%;
+    font-size: 2.2rem; }
+  .main-nav a:hover,
+  .main-nav a:focus {
+    background-color: #fff;
+    color: #063974; }
+  .main-nav a::after {
     display: none; } }
 
 .home header {
