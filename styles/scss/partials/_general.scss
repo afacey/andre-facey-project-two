@@ -141,3 +141,16 @@ form {
     padding: 2rem;
   }
 }
+
+
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 5rem;
+    text-align: center;
+    top: 40%;
+  }
+  form fieldset { flex-direction: column;}
+  form fieldset input { width: 100%; }
+
+  footer { font-size: 1.4rem; }
+}

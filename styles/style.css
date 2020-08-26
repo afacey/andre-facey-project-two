@@ -330,6 +330,18 @@ form {
     margin-bottom: 3rem;
     padding: 2rem; }
 
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 5rem;
+    text-align: center;
+    top: 40%; }
+  form fieldset {
+    flex-direction: column; }
+  form fieldset input {
+    width: 100%; }
+  footer {
+    font-size: 1.4rem; } }
+
 .home header {
   background-image: url(../assets/home-image-1.jpg); }
   .home header h1 {
@@ -512,7 +524,8 @@ form {
   background-image: url(../assets/contact-image-1.jpg);
   min-height: 60vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap; }
   .contact header .wrapper {
     flex: 1;
     position: relative; }
@@ -564,3 +577,20 @@ form {
     font-size: 1.4rem; }
     .contact aside .address li:not(:last-of-type) {
       margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+  .contact main {
+    padding: 10rem 0 6rem; }
+  .contact main .flex-container {
+    flex-direction: column; }
+  .contact .contact-form {
+    width: 100%;
+    margin-left: 0rem; }
+  .contact aside {
+    width: 100%;
+    align-items: center;
+    margin-top: 6rem; } }
+
+@media (max-width: 480px) {
+  .contact .contact-form {
+    padding: 25px; } }

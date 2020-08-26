@@ -5,7 +5,7 @@
     min-height: 60vh;
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
     .wrapper {
       flex: 1;
       position: relative;
@@ -22,6 +22,7 @@
     }
   }
 
+  // ------------------------------ HEADER
   main {
     padding: 10rem 0;
     .flex-container {
@@ -30,6 +31,7 @@
     }
   }
 
+  // ------------------------------ CONTACT FORM
   .contact-form {
     width: 70%;
     background-color: #fff;
@@ -41,11 +43,10 @@
 
       input,
       textarea { font-size: 1.6rem}
-
-    // fieldset > * { border: 1px solid red }
     
   }
 
+  // ------------------------------ CONTACT ASIDE
   aside {
     width: 25%;
     display: flex;
@@ -76,4 +77,27 @@
     }
   }
 
+}
+// ------------------------------ MEDIA QUERIES
+@media (max-width: 768px) {
+  .contact main { padding: 10rem 0 6rem; }
+
+  .contact main .flex-container {
+    flex-direction: column;
+  }
+
+  .contact .contact-form {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .contact aside {
+    width: 100%;
+    align-items: center;
+    margin-top: 6rem;
+  }
+} 
+
+@media (max-width: 480px) {
+  .contact .contact-form { padding: 25px; }
 }
