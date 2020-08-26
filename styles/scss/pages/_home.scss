@@ -132,10 +132,7 @@
     background-color: $color-highlight-2;
     padding: 10rem 0;
 
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-    }
+    // & > * { border: 1px solid tomato}
 
     .blog-container {
       display: flex;
