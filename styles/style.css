@@ -681,6 +681,10 @@ footer {
       /* Also needed for space (tweak if needed) */
       margin-left: -1em;
       /* Also needed for space (tweak if needed) */ }
+    .blog aside ul a {
+      color: #2C2C2C; }
+      .blog aside ul a:hover, .blog aside ul a:focus {
+        color: #50E3C2; }
 
 @media (max-width: 768px) {
   .blog main {

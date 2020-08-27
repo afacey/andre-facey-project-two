@@ -109,6 +109,15 @@
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
       }
+
+      a { 
+        color: $color-dark; 
+
+        &:hover,
+        &:focus {
+          color: $color-highlight-1;
+        }
+      }
       
     }
   }
