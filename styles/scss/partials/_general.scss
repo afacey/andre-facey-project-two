@@ -233,6 +233,7 @@ form {
   .menu-button:checked + .menu { 
     position: fixed; 
     right: 10%;
+    top: 2rem;
   }
 
   .menu-button:checked ~ ul {

@@ -180,9 +180,56 @@
   }
 
 }
+// ------------------------------------------------ MEDIA QUERIES
+@media (max-width: 800px) {
+  .home {
+    header {
+      min-height: 100vh;
+
+      h1 {
+        text-align: center;
+        font-size: calc(1.5rem + 7vw);
+        
+        span { 
+          font-size: calc(2rem + 8vw); 
+          margin-left: 0;
+        }
+      }
+
+      .img-container { display: none; }
+    }
+
+    .spotlight {
+      padding: 8rem 0;
+
+      .flex-container {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      .img-container { 
+        width: 50%; 
+        margin-bottom: 5rem;
+      }
+
+      &-content {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  }  
+}
 
 @media (max-width: 480px) {
   .home {
+  
+    header {
+      .main-nav .logo { font-size: 2.46rem }
+      
+      h1 { font-size: calc(1.5rem + 4vw); }
+      h1 span { font-size: calc(1.5rem + 5vw); }
+    }
 
     .gallery {
       padding: 7rem 0;
