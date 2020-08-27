@@ -56,7 +56,7 @@ header {
 
       &:hover,
       &:focus {
-        color: $color-secondary;
+        color: $color-highlight-1;
 
         &::after { opacity: 1;}
         
@@ -204,7 +204,6 @@ form {
 .menu-button { display: none; }
 
 .menu {
-  float: right;
   padding: 1rem;
   display: none;
   position: relative;
@@ -232,7 +231,6 @@ form {
   .menu-button:checked:focus + .menu { outline: 1px solid #201E21 }
   
   .menu-button:checked + .menu { 
-    float: none;
     position: fixed; 
     right: 10%;
   }
@@ -241,6 +239,8 @@ form {
     padding: 50px 0;
     top: 0;
   }
+
+  header .main-nav { align-items: flex-end }
 
   .main-nav ul {
     background-color: $color-secondary;
