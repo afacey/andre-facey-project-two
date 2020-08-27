@@ -553,15 +553,17 @@ form {
     margin-bottom: 2rem; }
 
 @media (max-width: 480px) {
-  .home .gallery .flex-container {
-    flex-direction: column;
-    align-items: center; }
-  .home .gallery .img-container {
-    width: 80% .home .gallery .img-container; }
-    .home .gallery .img-container :not(:last-of-type) {
-      margin-bottom: 2rem; }
-  .home .features .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .home .gallery {
+    padding: 7rem 0; }
+    .home .gallery .flex-container {
+      flex-direction: column;
+      align-items: center; }
+    .home .gallery .img-container {
+      width: 80%; }
+      .home .gallery .img-container:not(:last-of-type) {
+        margin-bottom: 4rem; }
+  .home .features .grid-container {
+    grid-template-columns: 1fr; }
   .home .features .feature-container {
     flex-direction: column;
     align-items: center;
