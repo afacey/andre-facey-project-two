@@ -244,6 +244,8 @@ footer {
 @media (max-width: 800px) {
 
   header {
+
+
     /* ------COLLAPSED NAV MENU */
     .menu-button,
     .menu { 
@@ -268,6 +270,8 @@ footer {
 
     .main-nav { 
       align-items: flex-end; 
+
+      .logo { font-size: calc(1.6rem + 2vw); }
       
       ul {
         background-color: $color-secondary;

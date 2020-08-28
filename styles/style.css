@@ -414,6 +414,8 @@ footer {
       top: 0; }
     header .main-nav {
       align-items: flex-end; }
+      header .main-nav .logo {
+        font-size: calc(1.6rem + 2vw); }
       header .main-nav ul {
         background-color: #063974;
         position: fixed;
