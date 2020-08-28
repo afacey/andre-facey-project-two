@@ -649,12 +649,12 @@ footer {
 
 .blog header {
   background-image: url(../assets/blog-image-1.jpg);
-  min-height: 60vh; }
+  height: 60vh; }
   .blog header h1 {
     color: #FAFFFE;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 20rem;
+    transform: translateY(50%);
     font-size: 6rem;
     letter-spacing: 9px; }
 

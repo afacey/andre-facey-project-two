@@ -2,7 +2,7 @@
   // ------------------------------ HEADER
   header {
     background-image: url(../assets/blog-image-1.jpg);
-    min-height: 60vh;
+    height: 60vh;
 
     
     h1 {
@@ -10,9 +10,9 @@
       color: $color-light;
       position: absolute;
       // z-index: 10;
-      top: 50%;
+      bottom: 20rem;
       // left: 10%;
-      transform: translateY(-50%);
+      transform: translateY(50%);
       font-size: 6rem;
       letter-spacing: 9px;
     }
