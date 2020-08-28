@@ -258,10 +258,11 @@ form {
   flex-direction: column; }
   form fieldset {
     border: none;
-    display: flex;
-    justify-content: space-between;
     padding: 0;
     margin: 0 0 2rem 0; }
+    form fieldset .container {
+      display: flex;
+      justify-content: space-between; }
     form fieldset input {
       width: calc(50% - 1rem);
       border-color: transparent transparent #50E3C2 transparent;
@@ -439,7 +440,7 @@ footer {
 @media (max-width: 480px) {
   body {
     font-size: 1.6rem; }
-  form fieldset {
+  form fieldset .container {
     flex-direction: column; }
   form fieldset input {
     width: 100%; }

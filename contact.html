@@ -53,11 +53,14 @@
         <section id="contact-form" class="contact-form">
           <form action="#">
             <fieldset>
-              <label class="sr-only" for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name">
-    
-              <label class="sr-only" for="email">Email address</label>
-              <input type="email" id="email" name="email" placeholder="Email address">
+              <div class="container"> <!-- chrome does not apply fieldset as a flex-container-->
+                
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+      
+                <label class="sr-only" for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Email address">
+              </div>
             </fieldset>
     
             <label class="sr-only" for="comment">Comment</label>

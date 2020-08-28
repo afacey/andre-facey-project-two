@@ -38,8 +38,12 @@ form {
 
   fieldset {
     border: none;
-    display: flex;
-    justify-content: space-between;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
     // TODO move into general partial
     padding: 0;
     margin: 0 0 2rem 0;
@@ -305,9 +309,11 @@ footer {
 @media (max-width: 480px) {
   body { font-size: 1.6rem }
 
-  form fieldset { flex-direction: column;}
-  form fieldset input { width: 100%; }
-
+  form fieldset {  
+    .container {flex-direction: column;}
+    input { width: 100%; }
+  }
+  
   footer { font-size: 1.4rem; }
 }
 
