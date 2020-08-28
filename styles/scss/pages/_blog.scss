@@ -126,7 +126,10 @@
 }
 
 // ------------------------------ MEDIA QUERIES
-
+// ------------------ MIN WIDTH 1200px (larger than the wrapper)
+@media (min-width: 1200px) {
+  .blog .blog-post-content { border-left: 5px solid #50E3C2;}
+}
 // ------------------ MAX WIDTH 768px
 @media (max-width: 768px) {
   .blog main { padding-bottom: 2rem }

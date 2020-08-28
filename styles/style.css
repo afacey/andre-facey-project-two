@@ -736,6 +736,10 @@ footer {
       .blog aside ul a:hover, .blog aside ul a:focus {
         color: #50E3C2; }
 
+@media (min-width: 1200px) {
+  .blog .blog-post-content {
+    border-left: 5px solid #50E3C2; } }
+
 @media (max-width: 768px) {
   .blog main {
     padding-bottom: 2rem; }
