@@ -39,7 +39,8 @@
     .flex-container {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      // TODO decide flex-start or center
+      // align-items: center;
     }
 
     &-content {
@@ -117,46 +118,54 @@
 
   .blogs {
     background-color: $color-highlight-2;
-    padding: $section-padding;
 
-    // & > * { border: 1px solid tomato}
+    .grid-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-row-gap: 8rem;
+    }
+    
 
     .blog-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      display: grid;
+      grid-template-columns: 1fr 10% 1fr;
+      position: relative;
+      z-index: 5;
+
+      .blog-post {
+        h2,
+        p {
+          margin-bottom: 2rem;
+        }
+      }
 
       &:nth-of-type(odd) {
-        margin-bottom: 6rem;
-      }
-    }
-    // TODO style images to extend to edge of viewport and overlap sections
-    .blog-container:nth-of-type(odd) {
-      img {
-        box-shadow: 15px 15px 0 $color-highlight-1;
-      }
-    }
+        .blog-post { 
+          grid-column-start: 3;
+          align-self: flex-end;
+          margin-left: -10%;
+        }
 
-    .blog-container:nth-of-type(even) {
-      text-align: right;
-      .img-container {
-        order: 1;
+        .img-container {margin-top: -20px; }
+        img { box-shadow: 15px 15px 0 $color-highlight-1; }
       }
-      img {
-        box-shadow: -15px 15px 0 $color-highlight-1;
-      }
-    }
 
-    .img-container {
-      width: calc(40%);
-    }
-
-    .blog-post {
-      width: calc(40%);
-      h2,
-      p {
-        margin-bottom: 2rem; 
+      &:nth-of-type(even) {
+        .blog-post { 
+          align-self: flex-start;
+          text-align: right;
+          margin-right: -10%;
+        }
+        .img-container { 
+          margin-bottom: -15px; 
+          order: 1;
+          grid-column-start: 3;
+        }
+        img { box-shadow: -15px 15px 0 $color-highlight-1; }
       }
+      
+
+
     }
   }
   // ------------------------------ CONTEST SECTION

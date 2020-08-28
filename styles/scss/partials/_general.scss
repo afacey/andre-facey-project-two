@@ -1,6 +1,14 @@
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 80%;
+  margin: 0 auto;
+}
+
+
+.wrapper-large {
+  // suggested by Joey Chau of cohort 29
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -73,7 +81,7 @@ form {
 
 // ------------------------------ HEADER SECTION
 header {
-  min-height: 90vh;
+  height: 90vh;
   padding-top: 2rem;
   background-size: cover;
   background-position: top center;
