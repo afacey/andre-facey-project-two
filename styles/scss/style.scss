@@ -4,6 +4,10 @@
 @import './partials/typography';
 @import './partials/general';
 
+// LAYOUT
+@import './layout/header';
+@import './layout/footer';
+
 // PAGES
 @import './pages/home';
 @import './pages/blog';

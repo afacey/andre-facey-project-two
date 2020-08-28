@@ -327,16 +327,6 @@ header {
     header .main-nav .link-active {
       color: #50E3C2; }
 
-footer {
-  background-color: #2C2C2C;
-  color: #FAFFFE;
-  text-align: center;
-  padding: 1rem; }
-  footer a {
-    color: #FAFFFE;
-    text-decoration: underline;
-    padding: 1rem 1rem 1rem 0; }
-
 /* -------------------COLLAPSED NAV MENU */
 .menu-button {
   display: none; }
@@ -442,9 +432,17 @@ footer {
   form fieldset .container {
     flex-direction: column; }
   form fieldset input {
-    width: 100%; }
-  footer {
-    font-size: 1.4rem; } }
+    width: 100%; } }
+
+footer {
+  background-color: #2C2C2C;
+  color: #FAFFFE;
+  text-align: center;
+  padding: 1rem; }
+  footer a {
+    color: #FAFFFE;
+    text-decoration: underline;
+    padding: 1rem 1rem 1rem 0; }
 
 .home header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)), url(../assets/home-image-1.jpg);
