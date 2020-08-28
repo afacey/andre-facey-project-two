@@ -92,10 +92,11 @@ header {
   display: flex;
   flex-direction: column;
 
-  .wrapper {
+  .wrapper-large { 
     flex: 1;
-    position: relative;
+    position: relative; 
   }
+
 
   .main-nav {
     display: flex;
