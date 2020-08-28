@@ -2,10 +2,11 @@
    // ------------------------------ HEADER
   header {
     background-image: url(../assets/contact-image-1.jpg);
-    min-height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
     .wrapper {
       flex: 1;
       position: relative;
@@ -15,7 +16,7 @@
     h1 {
       color: $color-light;
       position: absolute;
-      top: 50%;
+      bottom: 12rem;
       transform: translateY(-50%);
       font-size: 6rem;
       letter-spacing: 9px;
@@ -73,6 +74,7 @@
 
     .address {
       font-size: 1.4rem;
+      font-style: normal;
       
       li { list-style: none; }
       li:not(:last-of-type) { margin-bottom: 10px;}
@@ -109,5 +111,7 @@
     }
 
     .contact-form { padding: 25px; }
+
+    aside a { padding: 1rem;}
   }
 }

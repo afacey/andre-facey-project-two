@@ -292,9 +292,6 @@ header {
   background-position: top center;
   display: flex;
   flex-direction: column; }
-  header .wrapper-large {
-    flex: 1;
-    position: relative; }
   header .main-nav {
     display: flex;
     justify-content: space-between;
@@ -450,8 +447,11 @@ footer {
     font-size: 1.4rem; } }
 
 .home header {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url(../assets/home-image-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)), url(../assets/home-image-1.jpg);
   height: 65vh; }
+  .home header .wrapper-large {
+    flex: 1;
+    position: relative; }
   .home header h1 {
     color: #0C5F4C;
     position: absolute;
@@ -573,17 +573,15 @@ footer {
     padding: 10rem 0; } }
 
 @media (max-width: 800px) {
-  .home header {
-    min-height: 100vh; }
-    .home header h1 {
-      text-align: center;
-      font-size: calc(1.5rem + 7vw);
-      left: 50%; }
-      .home header h1 span {
-        font-size: calc(2rem + 8vw);
-        margin-left: 0; }
-    .home header .img-container {
-      display: none; }
+  .home header h1 {
+    text-align: center;
+    font-size: calc(1.5rem + 7vw);
+    left: 50%; }
+    .home header h1 span {
+      font-size: calc(2rem + 8vw);
+      margin-left: 0; }
+  .home header .img-container {
+    display: none; }
   .home .spotlight,
   .home .gallery,
   .home .features,
@@ -652,6 +650,9 @@ footer {
 .blog header {
   background-image: url(../assets/blog-image-1.jpg);
   height: 60vh; }
+  .blog header .wrapper-large {
+    flex: 1;
+    position: relative; }
   .blog header h1 {
     color: #FAFFFE;
     position: absolute;
@@ -781,7 +782,7 @@ footer {
 
 .contact header {
   background-image: url(../assets/contact-image-1.jpg);
-  min-height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
@@ -791,7 +792,7 @@ footer {
   .contact header h1 {
     color: #FAFFFE;
     position: absolute;
-    top: 50%;
+    bottom: 12rem;
     transform: translateY(-50%);
     font-size: 6rem;
     letter-spacing: 9px; }
@@ -833,7 +834,8 @@ footer {
   .contact aside a:hover {
     color: #50E3C2; }
   .contact aside .address {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    font-style: normal; }
     .contact aside .address li {
       list-style: none; }
     .contact aside .address li:not(:last-of-type) {
@@ -858,4 +860,6 @@ footer {
     text-align: center;
     top: 40%; }
   .contact .contact-form {
-    padding: 25px; } }
+    padding: 25px; }
+  .contact aside a {
+    padding: 1rem; } }

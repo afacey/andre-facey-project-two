@@ -2,9 +2,14 @@
 // ------------------------------ HEADER
   header {
     background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)),
+      linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)),
       url(../assets/home-image-1.jpg);
     height: 65vh;
+
+    .wrapper-large {
+      flex: 1;
+      position: relative;
+    }
 
     h1 {
       color: $color-primary;
@@ -207,7 +212,7 @@
 @media (max-width: 800px) {
   .home {
     header {
-      min-height: 100vh;
+      // min-height: 100vh;
 
       h1 {
         text-align: center;
