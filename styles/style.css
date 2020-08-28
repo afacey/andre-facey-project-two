@@ -285,48 +285,6 @@ form {
     margin-bottom: 3rem;
     padding: 2rem; }
 
-header {
-  height: 90vh;
-  padding-top: 2rem;
-  background-size: cover;
-  background-position: top center;
-  display: flex;
-  flex-direction: column; }
-  header .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase; }
-    header .main-nav .logo {
-      font-family: 'Playfair Display SC', serif;
-      color: #50E3C2;
-      font-size: 3.46rem;
-      letter-spacing: 1px; }
-    header .main-nav li {
-      display: inline-block; }
-      header .main-nav li:not(:last-child) {
-        margin-right: 3rem; }
-    header .main-nav a {
-      color: #FAFFFE;
-      letter-spacing: 1px;
-      position: relative; }
-      header .main-nav a:hover, header .main-nav a:focus {
-        color: #50E3C2; }
-        header .main-nav a:hover::after, header .main-nav a:focus::after {
-          opacity: 1; }
-      header .main-nav a::after {
-        content: '';
-        height: 2px;
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        width: 100%;
-        background-color: #50E3C2;
-        opacity: 0;
-        transition: opacity .3s ease; }
-    header .main-nav .link-active {
-      color: #50E3C2; }
-
 /* -------------------COLLAPSED NAV MENU */
 .menu-button {
   display: none; }
@@ -382,6 +340,56 @@ header {
       top: 0;
       left: 50%; }
 
+@media (max-width: 480px) {
+  body {
+    font-size: 1.6rem; }
+  form fieldset .container {
+    flex-direction: column; }
+  form fieldset input {
+    width: 100%; } }
+
+header {
+  height: 90vh;
+  padding-top: 2rem;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column; }
+  header .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase; }
+    header .main-nav .logo {
+      font-family: 'Playfair Display SC', serif;
+      color: #50E3C2;
+      font-size: 3.46rem;
+      letter-spacing: 1px; }
+    header .main-nav li {
+      display: inline-block; }
+      header .main-nav li:not(:last-child) {
+        margin-right: 3rem; }
+    header .main-nav a {
+      color: #FAFFFE;
+      letter-spacing: 1px;
+      position: relative; }
+      header .main-nav a:hover, header .main-nav a:focus {
+        color: #50E3C2; }
+        header .main-nav a:hover::after, header .main-nav a:focus::after {
+          opacity: 1; }
+      header .main-nav a::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        background-color: #50E3C2;
+        opacity: 0;
+        transition: opacity .3s ease; }
+    header .main-nav .link-active {
+      color: #50E3C2; }
+
 @media (max-width: 800px) {
   header {
     /* ------COLLAPSED NAV MENU */ }
@@ -425,14 +433,6 @@ header {
           color: #063974; }
         header .main-nav a::after {
           display: none; } }
-
-@media (max-width: 480px) {
-  body {
-    font-size: 1.6rem; }
-  form fieldset .container {
-    flex-direction: column; }
-  form fieldset input {
-    width: 100%; } }
 
 footer {
   background-color: #2C2C2C;

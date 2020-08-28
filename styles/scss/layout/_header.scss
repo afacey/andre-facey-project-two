@@ -1,0 +1,127 @@
+// ------------------------------ HEADER SECTION
+header {
+  height: 90vh;
+  padding-top: 2rem;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+    .logo {
+      font-family: 'Playfair Display SC', serif;
+      color: $color-highlight-1;
+      font-size: 3.46rem;
+      letter-spacing: 1px;
+    }
+
+    li {
+      display: inline-block;
+      &:not(:last-child) { margin-right: 3rem; }
+    }
+
+    a {
+      color: $color-light;
+      letter-spacing: 1px;
+      position: relative;
+
+      &:hover,
+      &:focus {
+        color: $color-highlight-1;
+
+        &::after { opacity: 1;}
+        
+      }
+
+      &::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        background-color: $color-highlight-1;
+        opacity: 0;
+        transition: opacity .3s ease;
+      }
+    }
+
+    .link-active { color: $color-highlight-1 }
+  }
+
+  
+}
+
+
+@media (max-width: 800px) {
+
+  header {
+
+
+    /* ------COLLAPSED NAV MENU */
+    .menu-button,
+    .menu { 
+      display: block 
+    }
+
+    .menu-button {
+      &:focus + .menu { outline: 1px solid $color-secondary }
+      &:checked:focus + .menu { outline: 1px solid #201E21 }
+    
+      &:checked + .menu { 
+        position: fixed; 
+        right: 10%;
+        top: 2rem;
+      }
+
+      &:checked ~ ul {
+        padding: 50px 0;
+        top: 0;
+      }
+    }
+
+    .main-nav { 
+      align-items: flex-end; 
+
+      .logo { font-size: calc(1.6rem + 2vw); }
+      
+      ul {
+        background-color: $color-secondary;
+        position: fixed;
+        top: -150%;
+        left: -0;
+        width: 100%;
+        z-index: 50;
+        transition: top .3s;
+        display: flex;
+        flex-direction: column;
+      }
+
+      li {
+        margin: 4rem 2rem;
+        text-align: center;
+      }
+
+      a {
+        color: #fff;
+        padding: 1.5rem 20%;
+        font-size: 2.2rem;
+
+        &:hover,
+        &:focus {
+          background-color: #fff;
+          color: $color-secondary;
+        }
+
+        &::after { display: none }
+
+      }
+
+    }
+  }
+}
