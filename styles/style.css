@@ -230,13 +230,13 @@ p {
   line-height: 32px; }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto; }
 
 .wrapper-large {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .btn {
@@ -394,14 +394,6 @@ footer {
       top: 0;
       left: 50%; }
 
-@media (max-width: 480px) {
-  form fieldset {
-    flex-direction: column; }
-  form fieldset input {
-    width: 100%; }
-  footer {
-    font-size: 1.4rem; } }
-
 @media (max-width: 800px) {
   header {
     /* ------COLLAPSED NAV MENU */ }
@@ -443,6 +435,16 @@ footer {
           color: #063974; }
         header .main-nav a::after {
           display: none; } }
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.6rem; }
+  form fieldset {
+    flex-direction: column; }
+  form fieldset input {
+    width: 100%; }
+  footer {
+    font-size: 1.4rem; } }
 
 .home header {
   background-image: url(../assets/home-image-1.jpg); }
@@ -557,6 +559,10 @@ footer {
   .home .contest p {
     margin-bottom: 2rem; }
 
+@media (max-width: 1024px) {
+  .home .blogs {
+    padding: 10rem 0; } }
+
 @media (max-width: 800px) {
   .home header {
     min-height: 100vh; }
@@ -588,6 +594,28 @@ footer {
     padding-bottom: 8rem; }
     .home .contest .wrapper {
       padding-top: 8rem; } }
+
+@media (max-width: 768px) {
+  .home .blogs .grid-container {
+    grid-row-gap: 6rem; }
+  .home .blogs .blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .home .blogs .blog-container:nth-of-type(odd) .img-container {
+      margin: 0 auto calc(4rem + 15px);
+      width: calc(70% - 15px); }
+    .home .blogs .blog-container:nth-of-type(odd) .blog-post {
+      margin-left: 0;
+      text-align: center; }
+    .home .blogs .blog-container:nth-of-type(even) .img-container {
+      margin: 0 auto calc(4rem + 15px);
+      width: calc(70% - 15px);
+      order: 0; }
+    .home .blogs .blog-container:nth-of-type(even) .blog-post {
+      margin-right: 0;
+      text-align: center; } }
 
 @media (max-width: 480px) {
   .home header .main-nav .logo {
@@ -689,7 +717,7 @@ footer {
       /* Add content: \2022 is the CSS Code/unicode for a bullet */
       color: #50E3C2;
       /* Change the color */
-      font-weight: normal;
+      font-weight: bold;
       /* If you want it to be bold */
       display: inline-block;
       /* Needed to add space between the bullet and the text */

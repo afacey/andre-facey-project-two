@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1280px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
 }
@@ -8,7 +8,7 @@
 .wrapper-large {
   // suggested by Joey Chau of cohort 29
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -235,13 +235,7 @@ footer {
   
 }
 
-
-@media (max-width: 480px) {
-  form fieldset { flex-direction: column;}
-  form fieldset input { width: 100%; }
-
-  footer { font-size: 1.4rem; }
-}
+// ------------------------------------------------- MEDIA QUERIES
 
 @media (max-width: 800px) {
 
@@ -307,5 +301,13 @@ footer {
   }
 }
 
+// -------------------------------MAX-WIDTH 480px
+@media (max-width: 480px) {
+  body { font-size: 1.6rem }
 
+  form fieldset { flex-direction: column;}
+  form fieldset input { width: 100%; }
+
+  footer { font-size: 1.4rem; }
+}
 
