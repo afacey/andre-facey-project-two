@@ -272,11 +272,11 @@ footer {
       ul {
         background-color: $color-secondary;
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: -0;
         width: 100%;
         z-index: 50;
-        transition: top .2s ease;
+        transition: top .3s;
         display: flex;
         flex-direction: column;
       }
@@ -313,7 +313,7 @@ footer {
     .container {flex-direction: column;}
     input { width: 100%; }
   }
-  
+
   footer { font-size: 1.4rem; }
 }
 

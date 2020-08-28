@@ -101,6 +101,8 @@
     }
 
     .icon-container {
+      margin-bottom: 1rem;
+      
       i.fa-stack-2x { color: $color-highlight-1;}
       i.fa-stack-1x { color: #fff; }
     }
@@ -172,6 +174,11 @@
   .contest {
     background-color: #fff;
     padding-bottom: 15rem;
+
+    img {
+      min-height: 200px;
+      object-fit: cover;
+    }
 
     .wrapper {
       padding-top: 15rem;

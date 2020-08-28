@@ -417,11 +417,11 @@ footer {
       header .main-nav ul {
         background-color: #063974;
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: -0;
         width: 100%;
         z-index: 50;
-        transition: top .2s ease;
+        transition: top .3s;
         display: flex;
         flex-direction: column; }
       header .main-nav li {
@@ -509,10 +509,12 @@ footer {
     display: grid;
     grid-template-columns: 5rem 1fr;
     gap: 1rem 2rem; }
-  .home .features .icon-container i.fa-stack-2x {
-    color: #50E3C2; }
-  .home .features .icon-container i.fa-stack-1x {
-    color: #fff; }
+  .home .features .icon-container {
+    margin-bottom: 1rem; }
+    .home .features .icon-container i.fa-stack-2x {
+      color: #50E3C2; }
+    .home .features .icon-container i.fa-stack-1x {
+      color: #fff; }
   .home .features .feature-content h3 {
     color: #0C5F4C;
     margin-bottom: 1rem; }
@@ -553,6 +555,9 @@ footer {
 .home .contest {
   background-color: #fff;
   padding-bottom: 15rem; }
+  .home .contest img {
+    min-height: 200px;
+    object-fit: cover; }
   .home .contest .wrapper {
     padding-top: 15rem;
     text-align: center; }
