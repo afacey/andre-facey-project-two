@@ -12,75 +12,12 @@
   margin: 0 auto;
 }
 
-.btn {
-  display: inline-block;
-  background-color: $color-secondary;
-  color: $color-light;
-  font-family: 'Playfair Display SC', serif;
-  padding: 15px;
-  border: 5px solid transparent;
-  transition: border-color .3s;
 
-  &:hover,
-  &:focus {
-    border-color: $color-highlight-1;
-  }
-}
 
 body {
   font-family: 'Lato', sans-serif;
 }
 
-// ------------------------------ FORM
-form {
-  display: flex;
-  flex-direction: column;
-
-  fieldset {
-    border: none;
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    // TODO move into general partial
-    padding: 0;
-    margin: 0 0 2rem 0;
-
-    input {
-      width: calc(50% - 1rem);
-      border-color: transparent transparent $color-highlight-1 transparent;
-      padding: 2rem;
-      // padding-bottom: 2rem;
-    }
-  }
-
-  input,
-  textarea {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-  }
-  // TODO floating label if time permits
-  input:focus,
-  input:active {
-    border-bottom-color: $color-secondary;
-    outline: none;
-  }
-
-  textarea:focus,
-  textarea:active {
-    border-color: $color-secondary;
-    outline: none;
-  }
-
-  textarea {
-    resize: none;
-    border: 2px solid $color-highlight-1;
-    margin-bottom: 3rem;
-    padding: 2rem;
-  }
-}
 
 
 
@@ -167,11 +104,5 @@ form {
 // -------------------------------MAX-WIDTH 480px
 @media (max-width: 480px) {
   body { font-size: 1.6rem }
-
-  form fieldset {  
-    .container {flex-direction: column;}
-    input { width: 100%; }
-  }
-
 }
 

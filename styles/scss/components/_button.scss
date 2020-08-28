@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  background-color: $color-secondary;
+  color: $color-light;
+  font-family: 'Playfair Display SC', serif;
+  padding: 15px;
+  border: 5px solid transparent;
+  transition: border-color .3s;
+
+  &:hover,
+  &:focus {
+    border-color: $color-highlight-1;
+  }
+}

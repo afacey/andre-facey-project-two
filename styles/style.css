@@ -239,51 +239,8 @@ p {
   max-width: 1200px;
   margin: 0 auto; }
 
-.btn {
-  display: inline-block;
-  background-color: #063974;
-  color: #FAFFFE;
-  font-family: 'Playfair Display SC', serif;
-  padding: 15px;
-  border: 5px solid transparent;
-  transition: border-color .3s; }
-  .btn:hover, .btn:focus {
-    border-color: #50E3C2; }
-
 body {
   font-family: 'Lato', sans-serif; }
-
-form {
-  display: flex;
-  flex-direction: column; }
-  form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0 0 2rem 0; }
-    form fieldset .container {
-      display: flex;
-      justify-content: space-between; }
-    form fieldset input {
-      width: calc(50% - 1rem);
-      border-color: transparent transparent #50E3C2 transparent;
-      padding: 2rem; }
-  form input,
-  form textarea {
-    font-size: 1.6rem;
-    letter-spacing: 1px; }
-  form input:focus,
-  form input:active {
-    border-bottom-color: #063974;
-    outline: none; }
-  form textarea:focus,
-  form textarea:active {
-    border-color: #063974;
-    outline: none; }
-  form textarea {
-    resize: none;
-    border: 2px solid #50E3C2;
-    margin-bottom: 3rem;
-    padding: 2rem; }
 
 /* -------------------COLLAPSED NAV MENU */
 .menu-button {
@@ -342,7 +299,52 @@ form {
 
 @media (max-width: 480px) {
   body {
-    font-size: 1.6rem; }
+    font-size: 1.6rem; } }
+
+.btn {
+  display: inline-block;
+  background-color: #063974;
+  color: #FAFFFE;
+  font-family: 'Playfair Display SC', serif;
+  padding: 15px;
+  border: 5px solid transparent;
+  transition: border-color .3s; }
+  .btn:hover, .btn:focus {
+    border-color: #50E3C2; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 2rem 0; }
+    form fieldset .container {
+      display: flex;
+      justify-content: space-between; }
+    form fieldset input {
+      width: calc(50% - 1rem);
+      border-color: transparent transparent #50E3C2 transparent;
+      padding: 2rem; }
+  form input,
+  form textarea {
+    font-size: 1.6rem;
+    letter-spacing: 1px; }
+  form input:focus,
+  form input:active {
+    border-bottom-color: #063974;
+    outline: none; }
+  form textarea:focus,
+  form textarea:active {
+    border-color: #063974;
+    outline: none; }
+  form textarea {
+    resize: none;
+    border: 2px solid #50E3C2;
+    margin-bottom: 3rem;
+    padding: 2rem; }
+
+@media (max-width: 480px) {
   form fieldset .container {
     flex-direction: column; }
   form fieldset input {
