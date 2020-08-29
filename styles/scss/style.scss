@@ -1,18 +1,19 @@
-@import './partials/setup';
-@import './partials/variables';
-@import './partials/mixins';
-@import './partials/typography';
+@import './base/setup';
+@import './base/variables';
+@import './base/mixins';
+@import './base/typography';
 
 // COMPONENTS
 @import './components/button';
 @import './components/form';
 @import './components/hamburger-menu';
 @import './components/skip-link';
-@import './components/wrapper';
+
 
 // LAYOUT
 @import './layout/header';
 @import './layout/footer';
+@import './layout/wrapper';
 
 // PAGES
 @import './pages/home';
