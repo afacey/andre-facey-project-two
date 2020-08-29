@@ -1,9 +1,47 @@
 body { 
   font-family: $font-primary; 
   font-size: 2rem;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 
-h2 { color: $color-primary; }
+h1 {
+  font-family: $font-secondary;
+  font-size: 8.7rem;
+  line-height: 58px;
+  font-style: italic;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: bold;
+  line-height: 58px;
+}
+
+h2 { 
+  font-size: 6.2rem;
+  letter-spacing: 9px;
+}
+
+h3 {
+  font-size: 6.2rem;
+  letter-spacing: 6.7px;
+}
+
+h4,
+h5 {
+  font-size: 3.5rem;
+  letter-spacing: 3.8px;
+}
+
+h6 {
+  font-size: 3rem;
+  letter-spacing: 3.2px;
+}
 
 p { line-height: 32px; }
 
