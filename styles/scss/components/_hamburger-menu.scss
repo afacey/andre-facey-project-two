@@ -1,0 +1,49 @@
+.menu-button { 
+  display: none; 
+
+  &:checked + .menu .menu-bar { 
+    background-color: transparent; 
+  
+    &::before { 
+      transform: rotate(45deg); 
+      top: 0;
+    }
+  
+    &::after { 
+      transform: rotate(135deg);
+      top: 0;
+    }
+  }
+}
+
+.menu {
+  padding: 1rem;
+  display: none;
+  position: relative;
+  z-index: 100;
+
+  &:hover { cursor: pointer; }
+}
+
+/* ------------------- COLLAPSED NAV MENU - BARS */
+.menu-bar {
+  background-color: $color-highlight-1;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    position: absolute;
+    background-color: $color-highlight-1;
+  }
+
+  &::before { top: 1rem; }
+  &::after { top: -1rem; }
+
+}

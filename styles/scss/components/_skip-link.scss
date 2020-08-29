@@ -1,0 +1,20 @@
+.skip-links {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: $color-light;
+    background-color: $color-secondary;
+    padding: 2rem;
+
+    &:focus {
+      top: 0;
+      left: 50%;
+    }
+  }
+  
+}

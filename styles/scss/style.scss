@@ -2,11 +2,13 @@
 @import './partials/variables';
 @import './partials/mixins';
 @import './partials/typography';
-@import './partials/general';
 
 // COMPONENTS
 @import './components/button';
 @import './components/form';
+@import './components/hamburger-menu';
+@import './components/skip-link';
+@import './components/wrapper';
 
 // LAYOUT
 @import './layout/header';
