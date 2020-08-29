@@ -1,7 +1,7 @@
-.menu-button { 
+.menu-checkbox { 
   display: none; 
 
-  &:checked + .menu .menu-bar { 
+  &:checked + .menu-icon .menu-bars { 
     background-color: transparent; 
   
     &::before { 
@@ -16,7 +16,7 @@
   }
 }
 
-.menu {
+.menu-icon {
   padding: 1rem;
   display: none;
   position: relative;
@@ -26,7 +26,7 @@
 }
 
 /* ------------------- COLLAPSED NAV MENU - BARS */
-.menu-bar {
+.menu-bars {
   background-color: $color-highlight-1;
   display: inline-block;
   width: 40px;

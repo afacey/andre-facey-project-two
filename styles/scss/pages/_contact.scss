@@ -48,6 +48,7 @@
     flex-direction: column;
     letter-spacing: 2px;
 
+    // create space between all children containers
     & > *:not(:last-child) { margin-bottom: 2rem;}
     
     .socials {
