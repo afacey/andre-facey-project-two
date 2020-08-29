@@ -9,6 +9,7 @@
   transition: border-color .3s;
 
   &:hover,
+  &:active,
   &:focus {
     border-color: $color-highlight-1;
   }

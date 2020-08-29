@@ -43,7 +43,7 @@
   // ------------------------------ SPOTLIGHT SECTION
   .spotlight {
     padding: 15rem 0 10rem;
-    background-color: #fff;
+    background-color: $color-light;
 
     .flex-container {
       display: flex;
@@ -84,7 +84,7 @@
 
   // ------------------------------ FEATURES SECTION
   .features {
-    background-color: #fff;
+    background-color: $color-light;
     padding: $section-padding;
 
     .grid-container {
@@ -105,7 +105,7 @@
       margin-bottom: 1rem;
 
       i.fa-stack-2x { color: $color-highlight-1;}
-      i.fa-stack-1x { color: #fff; }
+      i.fa-stack-1x { color: $color-light; }
     }
 
     .feature-content {
@@ -173,7 +173,7 @@
   }
   // ------------------------------ CONTEST SECTION
   .contest {
-    background-color: #fff;
+    background-color: $color-light;
     padding-bottom: 15rem;
 
     img {

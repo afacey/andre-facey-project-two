@@ -1,6 +1,5 @@
 // ------------------------------ HEADER SECTION
 header {
-  height: 90vh;
   padding-top: 2rem;
   background-size: cover;
   background-position: top center;
@@ -25,18 +24,12 @@ header {
       &:not(:last-child) { margin-right: 3rem; }
     }
 
+    .link-active { color: $color-highlight-1 }
+
     a {
       color: $color-light;
       letter-spacing: 1px;
       position: relative;
-
-      &:hover,
-      &:focus {
-        color: $color-highlight-1;
-
-        &::after { opacity: 1;}
-        
-      }
 
       &::after {
         content: '';
@@ -49,20 +42,21 @@ header {
         opacity: 0;
         transition: opacity .3s ease;
       }
+
+      &:hover,
+      &:focus {
+        color: $color-highlight-1;
+
+        &::after { opacity: 1;}        
+      }
     }
-
-    .link-active { color: $color-highlight-1 }
   }
-
-  
 }
 
 
 @media (max-width: 800px) {
 
   header {
-
-
     /* ------COLLAPSED NAV MENU */
     .menu-button,
     .menu { 
@@ -70,8 +64,8 @@ header {
     }
 
     .menu-button {
-      &:focus + .menu { outline: 1px solid $color-secondary }
-      &:checked:focus + .menu { outline: 1px solid #201E21 }
+      &:focus + .menu,
+      &:checked:focus + .menu { outline: 1px solid $color-secondary }
     
       &:checked + .menu { 
         position: fixed; 
@@ -108,13 +102,13 @@ header {
       }
 
       a {
-        color: #fff;
+        color: $color-light;
         padding: 1.5rem 20%;
         font-size: 2.2rem;
 
         &:hover,
         &:focus {
-          background-color: #fff;
+          background-color: $color-light;
           color: $color-secondary;
         }
 

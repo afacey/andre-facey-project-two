@@ -196,14 +196,12 @@ html {
 html {
   font-size: 62.5%; }
 
-body {
-  font-size: 2rem; }
-
 h1,
 h2,
 h3,
 h4,
 h5,
+h6,
 p,
 img,
 button,
@@ -246,7 +244,7 @@ p {
   padding: 15px;
   border: 5px solid transparent;
   transition: border-color .3s; }
-  .btn:hover, .btn:focus {
+  .btn:hover, .btn:active, .btn:focus {
     border-color: #50E3C2; }
 
 form {
@@ -344,7 +342,6 @@ form {
       left: 50%; }
 
 header {
-  height: 90vh;
   padding-top: 2rem;
   background-size: cover;
   background-position: top center;
@@ -364,14 +361,12 @@ header {
       display: inline-block; }
       header .main-nav li:not(:last-child) {
         margin-right: 3rem; }
+    header .main-nav .link-active {
+      color: #50E3C2; }
     header .main-nav a {
       color: #FAFFFE;
       letter-spacing: 1px;
       position: relative; }
-      header .main-nav a:hover, header .main-nav a:focus {
-        color: #50E3C2; }
-        header .main-nav a:hover::after, header .main-nav a:focus::after {
-          opacity: 1; }
       header .main-nav a::after {
         content: '';
         height: 2px;
@@ -382,8 +377,10 @@ header {
         background-color: #50E3C2;
         opacity: 0;
         transition: opacity .3s ease; }
-    header .main-nav .link-active {
-      color: #50E3C2; }
+      header .main-nav a:hover, header .main-nav a:focus {
+        color: #50E3C2; }
+        header .main-nav a:hover::after, header .main-nav a:focus::after {
+          opacity: 1; }
 
 @media (max-width: 800px) {
   header {
@@ -391,10 +388,9 @@ header {
     header .menu-button,
     header .menu {
       display: block; }
-    header .menu-button:focus + .menu {
-      outline: 1px solid #063974; }
+    header .menu-button:focus + .menu,
     header .menu-button:checked:focus + .menu {
-      outline: 1px solid #201E21; }
+      outline: 1px solid #063974; }
     header .menu-button:checked + .menu {
       position: fixed;
       right: 10%;
@@ -420,11 +416,11 @@ header {
         margin: 4rem 2rem;
         text-align: center; }
       header .main-nav a {
-        color: #fff;
+        color: #FAFFFE;
         padding: 1.5rem 20%;
         font-size: 2.2rem; }
         header .main-nav a:hover, header .main-nav a:focus {
-          background-color: #fff;
+          background-color: #FAFFFE;
           color: #063974; }
         header .main-nav a::after {
           display: none; } }
@@ -479,7 +475,7 @@ footer {
 
 .home .spotlight {
   padding: 15rem 0 10rem;
-  background-color: #fff; }
+  background-color: #FAFFFE; }
   .home .spotlight .flex-container {
     display: flex;
     justify-content: space-between; }
@@ -503,7 +499,7 @@ footer {
     width: calc(100% / 3 - 2%); }
 
 .home .features {
-  background-color: #fff;
+  background-color: #FAFFFE;
   padding: 10rem 0; }
   .home .features .grid-container {
     display: grid;
@@ -520,7 +516,7 @@ footer {
     .home .features .icon-container i.fa-stack-2x {
       color: #50E3C2; }
     .home .features .icon-container i.fa-stack-1x {
-      color: #fff; }
+      color: #FAFFFE; }
   .home .features .feature-content h3 {
     color: #0C5F4C;
     margin-bottom: 1rem; }
@@ -559,7 +555,7 @@ footer {
       box-shadow: -15px 15px 0 #50E3C2; }
 
 .home .contest {
-  background-color: #fff;
+  background-color: #FAFFFE;
   padding-bottom: 15rem; }
   .home .contest img {
     min-height: 200px;
@@ -792,7 +788,7 @@ footer {
 
 .contact .contact-form {
   width: 70%;
-  background-color: #fff;
+  background-color: #FAFFFE;
   margin-top: -22rem;
   margin-left: -5rem;
   box-shadow: 15px 15px 0 #50E3C2;
