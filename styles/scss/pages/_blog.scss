@@ -9,29 +9,27 @@
       position: relative; 
     }
 
-    
-    h1 {
-      // TODO center in relation to the wrapper
+    h1 {      
       color: $color-light;
-      position: absolute;
-      // z-index: 10;
-      bottom: 20rem;
-      // left: 10%;
-      transform: translateY(50%);
       font-size: 6rem;
       letter-spacing: 9px;
+
+      position: absolute;
+      bottom: 20rem;
+      transform: translateY(50%);      
     }
   }
 
+  // ------------------------------ MAIN
   main {
     padding: 10rem 0;
     & > .flex-container {
       display: flex;
       justify-content: space-between;
-      // border: 2px solid red;
     }
   }
 
+  // ------------------ MAIN > BLOG POST
   .blog-post {
     display: flex;
     flex-direction: column;
@@ -41,6 +39,7 @@
     z-index: 20;
   }
 
+  // ------------------ MAIN > BLOG POST > CONTENT
   .blog-post-content {
     border: 5px solid $color-highlight-1;
     border-left: none;
@@ -66,6 +65,8 @@
     p { margin-bottom: 2rem;}
   }
 
+  // ------------------ MAIN > BLOG POST > COMMENTS
+
   .blog-post-comments {
     display: flex;
     flex-direction: column;
@@ -80,15 +81,11 @@
     .comment-content { width: 75%; }
   }
 
+  // ---------------------------------- MAIN > ASIDE
   aside {
     width: calc(110 / 480 * 100%);
     font-size: 1.6rem;
     
-    // TODO fix spacing between containers
-    & > div,
-    &.content > div {
-      margin-bottom: 2rem;
-    }
     h4 {
       color: $color-primary;
       margin: 2rem 0 1rem;
@@ -98,21 +95,20 @@
 
     a { color: $color-secondary; }
 
+    // ------------------ MAIN > ASIDE > RECENT POSTS
     ul { 
-      // TODO style bullet points
-
       list-style: none;
 
       li { margin-left: 2rem; }
 
       li::before {
         // implementation from https://www.w3schools.com/howto/howto_css_bullet_color.asp
-        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: $color-highlight-1; /* Change the color */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 1em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
+        content: "\2022";
+        color: $color-highlight-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
       }
 
       a { 
@@ -126,64 +122,75 @@
       
     }
   }
-
-
 }
 
-// ------------------------------ MEDIA QUERIES
+// ------------------------------------------------------------ MEDIA QUERIES
+
 // ------------------ MIN WIDTH 1200px (larger than the wrapper)
 @media (min-width: 1200px) {
   .blog .blog-post-content { border-left: 5px solid #50E3C2;}
 }
+
 // ------------------ MAX WIDTH 768px
 @media (max-width: 768px) {
-  .blog main { padding-bottom: 2rem }
+  .blog {
 
-  .blog main > .flex-container {
-    flex-direction: column;
-  }
-
-  .blog .blog-post {
-    width: 100%;
-    margin: -20rem auto 6rem;
-  }
-
-  .blog-post-comments h3 { text-align: center;  }
-
-  .blog .comment-container {
-
-    .img-container { width: calc(30% - 2rem);}
-    .comment-content { width: 70%; }
-  }
-
-  .blog aside {
-    width: 80%;
-    margin: 0 auto;
-
-    h4 { margin-bottom: .6rem;}
-
-    img {
-      max-height: 250px;
-      object-fit: cover;
+    main { 
+      padding-bottom: 2rem;
+    
+      & > .flex-container { flex-direction: column;}
     }
+    
+    // -------------- MAIN > BLOG-POST
+    .blog-post {
+      width: 100%;
+      margin: -20rem auto 6rem;
+    }
+
+    // -------------- MAIN > BLOG-POST > COMMENTS
+    .blog-post-comments h3 { text-align: center;  }
+
+    .comment-container {
+      .img-container { width: calc(30% - 2rem);}
+      .comment-content { width: 70%; }
+    }
+
+    // -------------- MAIN > ASIDE
+    aside {
+      width: 80%;
+      margin: 0 auto;
+  
+      h4 { margin-bottom: .6rem;}
+  
+      img {
+        max-height: 250px;
+        object-fit: cover;
+      }
+    }
+
   }
 }
 
 // ------------------ MAX WIDTH 480px
 @media (max-width: 480px) {
-  .blog .comment-container {
-    flex-direction: column;
-    align-items: center;
+  .blog {
 
-    .img-container {
-      width: 50%;
-      margin-bottom: 1.6rem;
-    }
-
-    .comment-content { 
-      width: 100%; 
-
-      h4 { margin-bottom: 1rem;}
+    // -------------- MAIN > BLOG-POST > COMMENTS
+    .comment-container {
+      flex-direction: column;
+      align-items: center;
+  
+      .img-container {
+        width: 50%;
+        margin-bottom: 1.6rem;
+      }
+  
+      .comment-content { 
+        width: 100%; 
+  
+        h4 { margin-bottom: 1rem;}
+      }
+      
     }
   }
 }

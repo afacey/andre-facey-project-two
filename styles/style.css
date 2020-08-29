@@ -655,11 +655,11 @@ footer {
     position: relative; }
   .blog header h1 {
     color: #FAFFFE;
+    font-size: 6rem;
+    letter-spacing: 9px;
     position: absolute;
     bottom: 20rem;
-    transform: translateY(50%);
-    font-size: 6rem;
-    letter-spacing: 9px; }
+    transform: translateY(50%); }
 
 .blog main {
   padding: 10rem 0; }
@@ -709,9 +709,6 @@ footer {
 .blog aside {
   width: calc(110 / 480 * 100%);
   font-size: 1.6rem; }
-  .blog aside > div,
-  .blog aside.content > div {
-    margin-bottom: 2rem; }
   .blog aside h4 {
     color: #0C5F4C;
     margin: 2rem 0 1rem; }
@@ -725,17 +722,11 @@ footer {
       margin-left: 2rem; }
     .blog aside ul li::before {
       content: "\2022";
-      /* Add content: \2022 is the CSS Code/unicode for a bullet */
       color: #50E3C2;
-      /* Change the color */
       font-weight: bold;
-      /* If you want it to be bold */
       display: inline-block;
-      /* Needed to add space between the bullet and the text */
       width: 1em;
-      /* Also needed for space (tweak if needed) */
-      margin-left: -1em;
-      /* Also needed for space (tweak if needed) */ }
+      margin-left: -1em; }
     .blog aside ul a {
       color: #2C2C2C; }
       .blog aside ul a:hover, .blog aside ul a:focus {
@@ -748,12 +739,12 @@ footer {
 @media (max-width: 768px) {
   .blog main {
     padding-bottom: 2rem; }
-  .blog main > .flex-container {
-    flex-direction: column; }
+    .blog main > .flex-container {
+      flex-direction: column; }
   .blog .blog-post {
     width: 100%;
     margin: -20rem auto 6rem; }
-  .blog-post-comments h3 {
+  .blog .blog-post-comments h3 {
     text-align: center; }
   .blog .comment-container .img-container {
     width: calc(30% - 2rem); }

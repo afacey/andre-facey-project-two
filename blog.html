@@ -20,6 +20,7 @@
     </nav><!-- ./skip-links -->
     <div class="wrapper-large">
       <div class="wrapper">
+        <!-- main-nav -->
         <nav class="main-nav">
           <p class="logo">Beachstays</p>
   
@@ -30,6 +31,7 @@
             <span class="sr-only">Click here to toggle the navigation menu</span>
           </label>
           <!-- ./hamburger menu -->
+
           <ul>
             <li><a href="./">Home</a></li>
             <li><a href="#">About</a></li>
@@ -37,13 +39,15 @@
             <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
+        <!-- ./main-nav -->
     
         <h1>Blog</h1>
         
       </div> <!-- ./wrapper -->
-    </div>
+    </div><!-- ./wrapper-large -->
   </header>
-
+  
+<!-- START of MAIN -->
   <main id="main">
     <div class="wrapper-large flex-container">
 
@@ -56,6 +60,7 @@
           </div>
 
           <div class="wrapper">
+            <!-- start of blog-content -->
             <article class="blog-content">
               <h2>Five days of ocean seas</h2>
               <p class="blog-content-date">Monday January 21st, 2019 by <strong>Bora</strong></p>
@@ -75,10 +80,11 @@
               <p class="blog-content-paragraph">
                 Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.
               </p>
-            </article>
+            </article><!-- ./blog-content -->
           </div> <!-- ./wrapper -->
         </div><!-- ./blog-post-content -->
 
+        <!-- start of blog-post-comments -->
         <div id="blog-post-comments" class="blog-post-comments">
 
           <div class="wrapper flex-container">
@@ -105,13 +111,14 @@
   
             <form id="blog-submit-comment" action="#">
               <fieldset>
-                <div class="container"> <!-- chrome does not apply fieldset as a flex-container-->
+                <!-- chrome does not apply flex-container to a fieldset -->
+                <div class="container">
                   <label class="sr-only" for="name">Name</label>
                   <input type="text" id="name" name="name" placeholder="Name">
     
                   <label class="sr-only" for="email">Email address</label>
                   <input type="email" id="email" name="email" placeholder="Email address">
-                </div>
+                </div><!-- ./container-->
               </fieldset>
 
               <label class="sr-only" for="comment">Comment</label>
@@ -120,10 +127,10 @@
               <input type="submit" class="btn" value="post comment">
             </form>
 
-          </div>
+          </div><!-- ./wrapper + container -->
         </div><!-- ./blog-post-comments -->
 
-      </section>
+      </section><!-- ./blog-post-->
 
       <aside>
         <div class="img-container">
@@ -132,13 +139,13 @@
         </div>
         
         <div class="aside-content">
-          <div class="aside-content-mission">
+          <div class="aside-mission">
             <h4>Our mission</h4>  
             <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum</p>
             <a href="#">Find out more.</a>
-          </div>
+          </div><!-- ./aside-mission-->
 
-          <div class="aside-content-posts">
+          <div class="aside-recent-posts">
             <h4>Recent Posts</h4>
             <ul>
               <li><a href="#">Donec facilisis tortor ut</a></li>
@@ -146,8 +153,8 @@
               <li><a href="#">Semper sed sapien metus</a></li>
               <li><a href="#">Scelerisque nec pharetra</a></li>
             </ul>
-          </div>
-        </div>
+          </div><!-- ./aside-content-posts -->
+        </div><!-- ./aside-content -->
       
       </aside>
       
