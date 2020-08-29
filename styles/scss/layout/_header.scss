@@ -14,7 +14,7 @@ header {
     text-transform: uppercase;
 
     .logo {
-      font-family: 'Playfair Display SC', serif;
+      font-family: $font-secondary;
       color: $color-highlight-1;
       font-size: 3.46rem;
       letter-spacing: 1px;

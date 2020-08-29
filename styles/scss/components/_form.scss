@@ -2,6 +2,7 @@
 form {
   display: flex;
   flex-direction: column;
+  font-weight: 100;
 
   fieldset {
     border: none;
@@ -21,10 +22,13 @@ form {
     }
   }
 
+  // TODO adjust font sizing to style guide
   input,
   textarea {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
   // TODO floating label if time permits
   input:focus,
