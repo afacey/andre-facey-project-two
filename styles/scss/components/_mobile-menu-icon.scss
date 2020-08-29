@@ -1,9 +1,11 @@
 .menu-checkbox { 
+  // remove off page until mobile view
   display: none; 
 
   &:checked + .menu-icon .menu-bars { 
     background-color: transparent; 
   
+    // hide middle bar and rotate top and bottom to form an 'X'
     &::before { 
       transform: rotate(45deg); 
       top: 0;
@@ -33,6 +35,7 @@
   height: 3px;
   position: relative;
 
+  // create two bars above and below to create a hamburger icon
   &::before,
   &::after {
     content: "";

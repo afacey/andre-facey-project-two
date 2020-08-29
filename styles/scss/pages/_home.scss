@@ -12,23 +12,25 @@
       position: relative;
     }
 
-    h1 {
-      color: $color-primary;
+    .heading-text {
       position: absolute;
       z-index: 10;
       top: 40%;
       left: 55%;
       transform: translateX(-50%);
+    }
+
+    h1 {
+      font-family: $font-secondary;
+      font-size: 10.12rem;
+      color: $color-secondary;
+      margin-left: -20px;
+    }
+    
+    h3 { 
+      color: $color-primary;
       font-size: 5rem;
       letter-spacing: 9px;
-  
-      span { 
-        display: block;
-        font-family: $font-secondary;
-        font-size: 10.12rem;
-        color: $color-secondary;
-        margin-left: -20px;
-      }
     }
 
     .img-container {
