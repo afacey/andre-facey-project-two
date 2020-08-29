@@ -782,10 +782,7 @@ footer {
 
 .contact header {
   background-image: url(../assets/contact-image-1.jpg);
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
+  height: 50vh; }
   .contact header .wrapper {
     flex: 1;
     position: relative; }
@@ -811,9 +808,6 @@ footer {
   box-shadow: 15px 15px 0 #50E3C2;
   padding: 50px;
   z-index: 10; }
-  .contact .contact-form input,
-  .contact .contact-form textarea {
-    font-size: 1.6rem; }
 
 .contact aside {
   width: 25%;
@@ -844,8 +838,8 @@ footer {
 @media (max-width: 768px) {
   .contact main {
     padding: 10rem 0 6rem; }
-  .contact main .flex-container {
-    flex-direction: column; }
+    .contact main .flex-container {
+      flex-direction: column; }
   .contact .contact-form {
     width: 100%;
     margin-left: 0rem; }

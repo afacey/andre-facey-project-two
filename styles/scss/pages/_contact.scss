@@ -3,9 +3,6 @@
   header {
     background-image: url(../assets/contact-image-1.jpg);
     height: 50vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     
     .wrapper {
       flex: 1;
@@ -26,6 +23,7 @@
   // ------------------------------ HEADER
   main {
     padding: 10rem 0;
+
     .flex-container {
       display: flex;
       justify-content: space-between;
@@ -40,11 +38,7 @@
     margin-left: -5rem;
     box-shadow: 15px 15px 0 $color-highlight-1;
     padding: 50px;
-    z-index: 10;
-
-      input,
-      textarea { font-size: 1.6rem}
-    
+    z-index: 10;    
   }
 
   // ------------------------------ CONTACT ASIDE
@@ -84,26 +78,30 @@
 }
 // ------------------------------ MEDIA QUERIES
 @media (max-width: 768px) {
-  .contact main { padding: 10rem 0 6rem; }
+  .contact {
 
-  .contact main .flex-container {
-    flex-direction: column;
-  }
+    main { 
+      padding: 10rem 0 6rem; 
+      .flex-container { flex-direction: column; }
+    }
 
-  .contact .contact-form {
-    width: 100%;
-    margin-left: 0rem;
-  }
+    .contact-form {
+      width: 100%;
+      margin-left: 0rem;
+    }
 
-  .contact aside {
-    width: 100%;
-    align-items: center;
-    margin-top: 6rem;
+    aside {
+      width: 100%;
+      align-items: center;
+      margin-top: 6rem;
+    }
+  
   }
 } 
 
 @media (max-width: 480px) {
   .contact {
+    
     h1 {
       font-size: 5rem;
       text-align: center;
