@@ -16,6 +16,8 @@
       top: 0;
     }
   }
+
+  &:checked:focus + .menu-icon .menu-bars { outline-color: $color-light; }
 }
 
 .menu-icon {

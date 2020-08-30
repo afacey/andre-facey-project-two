@@ -332,6 +332,8 @@ form {
     .menu-checkbox:checked + .menu-icon .menu-bars::after {
       transform: rotate(135deg);
       top: 0; }
+  .menu-checkbox:checked:focus + .menu-icon .menu-bars {
+    outline-color: #FAFFFE; }
 
 .menu-icon {
   padding: 1rem;
@@ -431,7 +433,7 @@ header {
     display: block; }
   header .menu-checkbox:focus + .menu-icon,
   header .menu-checkbox:checked:focus + .menu-icon {
-    outline: 1px solid #063974; }
+    outline: 1px solid #FAFFFE; }
   header .menu-checkbox:checked + .menu-icon {
     position: fixed;
     right: 10%;

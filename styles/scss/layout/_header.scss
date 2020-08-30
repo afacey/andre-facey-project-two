@@ -66,7 +66,7 @@ header {
     .menu-checkbox {
       // create outline on hamburger when checkbox is focused while visually hidden
       &:focus + .menu-icon,
-      &:checked:focus + .menu-icon { outline: 1px solid $color-secondary }
+      &:checked:focus + .menu-icon { outline: 1px solid $color-light; }
     
       // make hamburger / close fixed to the top right
       &:checked + .menu-icon { 
