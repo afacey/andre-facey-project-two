@@ -12,6 +12,8 @@
       position: relative;
     }
 
+    
+
     .heading-text {
       position: absolute;
       z-index: 10;
@@ -21,16 +23,13 @@
     }
 
     h1 {
-      // font-family: $font-secondary;
-      // font-size: 10.12rem;
       color: $color-secondary;
       margin-left: -20px;
     }
     
     h3 { 
       color: $color-primary;
-      // font-size: 5rem;
-      // letter-spacing: 9px;
+      margin-bottom: 2rem;
     }
 
     .img-container {
@@ -55,10 +54,7 @@
     &-content {
       width: calc(70%);
 
-      h4 { 
-        color: $color-primary; 
-        margin-bottom: 0.5rem; 
-      }
+      h4 { color: $color-primary; }
 
       p { margin-bottom: 2rem; }
     }
@@ -113,12 +109,7 @@
       i.fa-stack-1x { color: $color-light; }
     }
 
-    .feature-content {
-      h6 {
-        color: $color-primary;
-        margin-bottom: 1rem;
-      }
-    }
+    .feature-content h6 { color: $color-primary; }
 
   }
 
@@ -143,10 +134,7 @@
       .blog-post {
         p { margin-bottom: 2rem; }
 
-        h5 { 
-          color: $color-primary; 
-          margin-bottom: .5rem;
-        }
+        h5 { color: $color-primary; }
       }
 
       // first blog post image / content
@@ -196,14 +184,20 @@
 
     p { margin-bottom: 2rem; }
 
-    h5 { 
-      color: $color-primary; 
-      margin-bottom: 0.5rem;
-    }
+    h5 { color: $color-primary; }
   }
 
 }
 // ------------------------------------------------ MEDIA QUERIES
+
+@media (min-width: 1200px) {
+  // TODO figure out margin width
+  .home .wrapper-large .wrapper {
+    // width: 100%;
+    // min-width: calc(1500px * .8);
+    // 1500px
+  }
+}
 
 // ----------------------------MAX-WIDTH 1024px
 @media (max-width: 1024px) {
@@ -223,7 +217,6 @@
 
       h3 {
         font-size: calc(1.5rem + 7vw);
-        text-align: center;
         left: 50%;
       }
       
@@ -249,7 +242,7 @@
 
       .img-container { 
         width: 50%; 
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
       }
 
       .spotlight-content {
@@ -285,7 +278,7 @@
         // Apply to all blog-containers
         &:nth-of-type(1n) {
           .img-container {
-            margin: 0 auto calc(4rem + 15px);
+            margin: 0 auto calc(1rem + 15px);
             width: calc(70% - 15px); 
           }
 
@@ -306,15 +299,32 @@
   }
 }
 
-// ----------------------------MAX-WIDTH 768px
+// ----------------------------MAX-WIDTH 480px
 @media (max-width: 480px) {
   .home {
+
+    h4,
+    h5 {
+      font-size: 3.2rem;
+    }
+
     // ------------------480px HOME > HEADER
     header {
       .main-nav .logo { font-size: 2.46rem }
 
-      h1 { font-size: calc(1.5rem + 4vw); }
-      h3 { font-size: calc(1.5rem + 5vw); }
+      .heading-text {
+        width: 80%;
+        text-align: center;
+        transform: translateX(0);
+        left: unset;
+      }
+
+      h1 { font-size: calc(3.5rem + 1.5vw); }
+      
+      h3 { 
+        font-size: calc(3.1rem + 1.5vw); 
+        margin-bottom: 0;
+      }
     }
 
     // ------------------480px HOME > MAIN > GALLERY
@@ -334,9 +344,8 @@
 
     // ------------------480px HOME > MAIN > FEATURES
     .features {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
+      .grid-container { grid-template-columns: 1fr; }
+      .icon-container { margin: 0;}
 
       .feature-container {
         display: flex;
