@@ -867,7 +867,7 @@ footer {
   .contact aside address {
     font-size: 1.4rem;
     font-style: normal;
-    line-height: 20px; }
+    line-height: 1.2; }
     .contact aside address li {
       list-style: none; }
     .contact aside address li:not(:last-of-type) {
@@ -883,18 +883,17 @@ footer {
     margin-left: 0rem; }
   .contact aside {
     width: 100%;
+    font-size: 2rem;
     align-items: center;
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+    .contact aside a {
+      padding: 1.5rem; }
+    .contact aside address {
+      font-size: inherit;
+      text-align: center; }
+      .contact aside address a {
+        padding: inherit; } }
 
 @media (max-width: 480px) {
-  .contact h2 {
-    font-size: 5rem;
-    text-align: center; }
   .contact .contact-form {
-    padding: 25px; }
-  .contact aside {
-    font-size: 2rem; }
-    .contact aside a {
-      padding: 1rem; }
-    .contact aside address {
-      text-align: center; } }
+    padding: 25px; } }

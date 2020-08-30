@@ -44,16 +44,8 @@
     width: 25%;
     display: flex;
     flex-direction: column;
-    // letter-spacing: 2px;
-
-    // create space between all children containers
-    // & > *:not(:last-child) { margin-bottom: 5px;}
     
-    .socials {
-      display: flex;
-      // justify-content: space-between;
-      // & li:not(:last-of-type) { margin-right: 15px;}
-    }
+    .socials { display: flex; }
 
     a { 
       font-weight: bold;
@@ -69,7 +61,7 @@
     address {
       font-size: 1.4rem;
       font-style: normal;
-      line-height: 20px;
+      line-height: 1.2;
       
       li { list-style: none; }
       li:not(:last-of-type) { margin-bottom: 5px;}
@@ -93,28 +85,26 @@
 
     aside {
       width: 100%;
+      font-size: 2rem;
       align-items: center;
       margin-top: 6rem;
-    }
+
+      a { padding: 1.5rem; }
+
+      address { 
+        font-size: inherit;
+        text-align: center;
   
+        a { 
+          // prevent iOS safari from realigning phone number by adding padding as iOS safari styles phone numbers as anchor elements
+          padding: inherit;
+        }
+      }
+    } 
+
   }
 } 
 
 @media (max-width: 480px) {
-  .contact {
-    
-    h2 {
-      font-size: 5rem;
-      text-align: center;
-    }
-
-    .contact-form { padding: 25px; }
-
-    aside {
-      font-size: 2rem;
-      a { padding: 1rem;}
-      address { text-align: center;}
-    } 
-
-  }
+  .contact .contact-form { padding: 25px; }
 }
