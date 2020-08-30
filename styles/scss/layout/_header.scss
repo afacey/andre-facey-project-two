@@ -83,9 +83,13 @@ header {
     }
 
     .main-nav { 
-      align-items: flex-end; 
 
-      .logo { font-size: calc(1.6rem + 2vw); }
+      .logo { 
+        font-size: calc(1.6rem + 2vw); 
+        
+        // prevent logo from "jumping" up when menu button is clicked
+        padding-top: 2rem; 
+      }
       
       ul {
         // change flex direction to list items vertically and take up the full width

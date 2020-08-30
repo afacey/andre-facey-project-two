@@ -4,7 +4,7 @@
 
   &:checked + .menu-icon .menu-bars { 
     background-color: transparent; 
-  
+    
     // hide middle bar and rotate top and bottom to form an 'X'
     &::before { 
       transform: rotate(45deg); 
@@ -24,12 +24,21 @@
   position: relative;
   z-index: 100;
 
-  &:hover { cursor: pointer; }
+  &:hover { 
+    cursor: pointer; 
+  
+    ::before,
+    ::after {
+      transition: top .2s, transform .2s;
+    }
+    ::before { top: 1.4rem; }
+    ::after { top: -1.4rem; }
+  }
 }
 
 /* ------------------- COLLAPSED NAV MENU - BARS */
 .menu-bars {
-  background-color: $color-highlight-1;
+  background-color: $color-light;
   display: inline-block;
   width: 40px;
   height: 3px;
@@ -43,7 +52,7 @@
     height: inherit;
     display: inline-block;
     position: absolute;
-    background-color: $color-highlight-1;
+    background-color: $color-light;
   }
 
   &::before { top: 1rem; }

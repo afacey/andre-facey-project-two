@@ -259,12 +259,10 @@ h6 {
   font-size: 3rem;
   letter-spacing: 3.2px; }
 
-p {
-  line-height: 32px; }
-
 @media (max-width: 480px) {
   body {
-    font-size: 1.6rem; } }
+    font-size: 1.5rem;
+    letter-spacing: .4px; } }
 
 .btn {
   display: inline-block;
@@ -337,10 +335,17 @@ form {
   z-index: 100; }
   .menu-icon:hover {
     cursor: pointer; }
+    .menu-icon:hover ::before,
+    .menu-icon:hover ::after {
+      transition: top .2s, transform .2s; }
+    .menu-icon:hover ::before {
+      top: 1.4rem; }
+    .menu-icon:hover ::after {
+      top: -1.4rem; }
 
 /* ------------------- COLLAPSED NAV MENU - BARS */
 .menu-bars {
-  background-color: #50E3C2;
+  background-color: #FAFFFE;
   display: inline-block;
   width: 40px;
   height: 3px;
@@ -351,7 +356,7 @@ form {
     height: inherit;
     display: inline-block;
     position: absolute;
-    background-color: #50E3C2; }
+    background-color: #FAFFFE; }
   .menu-bars::before {
     top: 1rem; }
   .menu-bars::after {
@@ -429,32 +434,31 @@ header {
     header .menu-checkbox:checked ~ ul {
       padding: 50px 0;
       top: 0; }
-    header .main-nav {
-      align-items: flex-end; }
-      header .main-nav .logo {
-        font-size: calc(1.6rem + 2vw); }
-      header .main-nav ul {
-        background-color: #063974;
-        position: fixed;
-        top: -150%;
-        left: -0;
-        width: 100%;
-        z-index: 50;
-        transition: top .3s;
-        display: flex;
-        flex-direction: column; }
-      header .main-nav li {
-        margin: 4rem 2rem;
-        text-align: center; }
-      header .main-nav a {
-        color: #FAFFFE;
-        padding: 1.5rem 20%;
-        font-size: 2.2rem; }
-        header .main-nav a:hover, header .main-nav a:focus {
-          background-color: #FAFFFE;
-          color: #063974; }
-        header .main-nav a::after {
-          display: none; } }
+    header .main-nav .logo {
+      font-size: calc(1.6rem + 2vw);
+      padding-top: 2rem; }
+    header .main-nav ul {
+      background-color: #063974;
+      position: fixed;
+      top: -150%;
+      left: -0;
+      width: 100%;
+      z-index: 50;
+      transition: top .3s;
+      display: flex;
+      flex-direction: column; }
+    header .main-nav li {
+      margin: 4rem 2rem;
+      text-align: center; }
+    header .main-nav a {
+      color: #FAFFFE;
+      padding: 1.5rem 20%;
+      font-size: 2.2rem; }
+      header .main-nav a:hover, header .main-nav a:focus {
+        background-color: #FAFFFE;
+        color: #063974; }
+      header .main-nav a::after {
+        display: none; } }
 
 footer {
   background-color: #2C2C2C;
@@ -804,14 +808,12 @@ footer {
   height: 50vh; }
   .contact header .wrapper {
     flex: 1;
-    position: relative; }
-  .contact header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .contact header h2 {
     color: #FAFFFE;
-    position: absolute;
-    bottom: 12rem;
-    transform: translateY(-50%);
-    font-size: 6rem;
-    letter-spacing: 9px; }
+    margin-bottom: 15rem; }
 
 .contact main {
   padding: 10rem 0; }
@@ -831,14 +833,9 @@ footer {
 .contact aside {
   width: 25%;
   display: flex;
-  flex-direction: column;
-  letter-spacing: 2px; }
-  .contact aside > *:not(:last-child) {
-    margin-bottom: 2rem; }
+  flex-direction: column; }
   .contact aside .socials {
     display: flex; }
-    .contact aside .socials li:not(:last-of-type) {
-      margin-right: 15px; }
   .contact aside a {
     font-weight: bold;
     padding: 1.5rem 1.5rem 1.5rem 0; }
@@ -846,13 +843,14 @@ footer {
   .contact aside a:active,
   .contact aside a:hover {
     color: #50E3C2; }
-  .contact aside .address {
+  .contact aside address {
     font-size: 1.4rem;
-    font-style: normal; }
-    .contact aside .address li {
+    font-style: normal;
+    line-height: 20px; }
+    .contact aside address li {
       list-style: none; }
-    .contact aside .address li:not(:last-of-type) {
-      margin-bottom: 10px; }
+    .contact aside address li:not(:last-of-type) {
+      margin-bottom: 5px; }
 
 @media (max-width: 768px) {
   .contact main {
@@ -868,11 +866,14 @@ footer {
     margin-top: 6rem; } }
 
 @media (max-width: 480px) {
-  .contact h1 {
+  .contact h2 {
     font-size: 5rem;
-    text-align: center;
-    top: 40%; }
+    text-align: center; }
   .contact .contact-form {
     padding: 25px; }
-  .contact aside a {
-    padding: 1rem; } }
+  .contact aside {
+    font-size: 2rem; }
+    .contact aside a {
+      padding: 1rem; }
+    .contact aside address {
+      text-align: center; } }
