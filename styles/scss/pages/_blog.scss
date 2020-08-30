@@ -4,25 +4,24 @@
     background-image: url(../assets/blog-image-1.jpg);
     height: 60vh;
 
-    .wrapper-large { 
-      flex: 1;
-      position: relative; 
+    .wrapper-large { flex: 1;}
+
+    .wrapper { 
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     h2 {      
       color: $color-light;
-      font-size: 6rem;
-      letter-spacing: 9px;
-
-      position: absolute;
-      bottom: 20rem;
-      transform: translateY(50%);      
+      margin-bottom: 15rem;
     }
   }
 
   // ------------------------------ MAIN
   main {
-    padding: 10rem 0;
+    padding: $section-padding;
     & > .flex-container {
       display: flex;
       justify-content: space-between;
@@ -56,11 +55,16 @@
       }
     }
 
-    h3 { margin-bottom: 1rem }
+    h3 { 
+      color: $color-primary;
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
 
     .blog-content-date {
       color: $color-secondary;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      letter-spacing: .2px;
     }
     p { margin-bottom: 2rem;}
   }
@@ -70,6 +74,11 @@
   .blog-post-comments {
     display: flex;
     flex-direction: column;
+
+    h4 { 
+      font-size: 3rem;
+      letter-spacing: 2px; 
+    }
   }
   
   .comment-container {
@@ -77,7 +86,15 @@
     justify-content: space-between;
     margin: 4rem 0;
 
-    .img-container { width: calc(25% - 2rem) }
+    h5 { 
+      color: $color-secondary; 
+      letter-spacing: 2px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .img-container { width: calc(25% - 3.5rem) }
     .comment-content { width: 75%; }
   }
 
@@ -87,38 +104,38 @@
     font-size: 1.6rem;
     
     h6 {
-      color: $color-primary;
-      margin: 2rem 0 1rem;
+      color: $color-secondary;
+      font-size: 2.2rem;
+      // margin: 2rem 0 1rem;
     }
 
     p { line-height: 1.4; }
 
-    a { color: $color-secondary; }
+    .aside-mission a {
+        color: $color-primary; 
+        font-weight: bold;
+    }
+
+    a:hover,
+    a:focus {
+      color: $color-highlight-1;
+    }
 
     // ------------------ MAIN > ASIDE > RECENT POSTS
     ul { 
       list-style: none;
 
-      li { margin-left: 2rem; }
+      li { margin-left: .8rem; }
 
       li::before {
         // implementation from https://www.w3schools.com/howto/howto_css_bullet_color.asp
         content: "\2022";
         color: $color-highlight-1;
-        font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -1em;
       }
 
-      a { 
-        color: $color-dark; 
-
-        &:hover,
-        &:focus {
-          color: $color-highlight-1;
-        }
-      }
+      a { color: $color-dark; }
       
     }
   }
@@ -128,6 +145,7 @@
 
 // ------------------ MIN WIDTH 1200px (larger than the wrapper)
 @media (min-width: 1200px) {
+  // add left border to the blog post container
   .blog .blog-post-content { border-left: 5px solid #50E3C2;}
 }
 
@@ -148,8 +166,6 @@
     }
 
     // -------------- MAIN > BLOG-POST > COMMENTS
-    .blog-post-comments h4 { text-align: center;  }
-
     .comment-container {
       .img-container { width: calc(30% - 2rem);}
       .comment-content { width: 70%; }
@@ -175,7 +191,14 @@
 @media (max-width: 480px) {
   .blog {
 
+    .blog-post-content h3 { 
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+
     // -------------- MAIN > BLOG-POST > COMMENTS
+    .blog-post-comments h4 { text-align: center;  }
+    
     .comment-container {
       flex-direction: column;
       align-items: center;

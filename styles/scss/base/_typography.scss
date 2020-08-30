@@ -43,7 +43,9 @@ h6 {
   letter-spacing: 3.2px;
 }
 
-// p { line-height: 32px; }
+@media (max-width: 1024px) {
+  body { letter-spacing: 1px;}
+}
 
 @media (max-width: 480px) {
   body { 

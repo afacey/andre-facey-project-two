@@ -259,6 +259,10 @@ h6 {
   font-size: 3rem;
   letter-spacing: 3.2px; }
 
+@media (max-width: 1024px) {
+  body {
+    letter-spacing: 1px; } }
+
 @media (max-width: 480px) {
   body {
     font-size: 1.5rem;
@@ -266,11 +270,12 @@ h6 {
 
 .btn {
   display: inline-block;
-  background-color: #063974;
+  padding: 15px;
   color: #FAFFFE;
   font-family: "Playfair Display SC", Georgia, serif;
-  letter-spacing: 3px;
-  padding: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: #063974;
   border: 5px solid transparent;
   transition: border-color .3s; }
   .btn:hover, .btn:active, .btn:focus {
@@ -390,6 +395,7 @@ header {
     text-transform: uppercase; }
     header .main-nav .logo {
       font-family: "Playfair Display SC", Georgia, serif;
+      font-style: italic;
       color: #50E3C2;
       font-size: 3.46rem;
       letter-spacing: 1px; }
@@ -683,15 +689,15 @@ footer {
   background-image: url(../assets/blog-image-1.jpg);
   height: 60vh; }
   .blog header .wrapper-large {
-    flex: 1;
-    position: relative; }
+    flex: 1; }
+  .blog header .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .blog header h2 {
     color: #FAFFFE;
-    font-size: 6rem;
-    letter-spacing: 9px;
-    position: absolute;
-    bottom: 20rem;
-    transform: translateY(50%); }
+    margin-bottom: 15rem; }
 
 .blog main {
   padding: 10rem 0; }
@@ -718,23 +724,35 @@ footer {
       width: calc(100% - 10px);
       box-shadow: 15px 15px #50E3C2; }
   .blog .blog-post-content h3 {
-    margin-bottom: 1rem; }
+    color: #0C5F4C;
+    font-size: 3rem;
+    letter-spacing: 3px; }
   .blog .blog-post-content .blog-content-date {
     color: #063974;
-    font-size: 1.8rem; }
+    font-size: 1.6rem;
+    letter-spacing: .2px; }
   .blog .blog-post-content p {
     margin-bottom: 2rem; }
 
 .blog .blog-post-comments {
   display: flex;
   flex-direction: column; }
+  .blog .blog-post-comments h4 {
+    font-size: 3rem;
+    letter-spacing: 2px; }
 
 .blog .comment-container {
   display: flex;
   justify-content: space-between;
   margin: 4rem 0; }
+  .blog .comment-container h5 {
+    color: #063974;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4; }
   .blog .comment-container .img-container {
-    width: calc(25% - 2rem); }
+    width: calc(25% - 3.5rem); }
   .blog .comment-container .comment-content {
     width: 75%; }
 
@@ -742,27 +760,27 @@ footer {
   width: calc(110 / 480 * 100%);
   font-size: 1.6rem; }
   .blog aside h6 {
-    color: #0C5F4C;
-    margin: 2rem 0 1rem; }
+    color: #063974;
+    font-size: 2.2rem; }
   .blog aside p {
     line-height: 1.4; }
-  .blog aside a {
-    color: #063974; }
+  .blog aside .aside-mission a {
+    color: #0C5F4C;
+    font-weight: bold; }
+  .blog aside a:hover,
+  .blog aside a:focus {
+    color: #50E3C2; }
   .blog aside ul {
     list-style: none; }
     .blog aside ul li {
-      margin-left: 2rem; }
+      margin-left: .8rem; }
     .blog aside ul li::before {
       content: "\2022";
       color: #50E3C2;
-      font-weight: bold;
       display: inline-block;
-      width: 1em;
-      margin-left: -1em; }
+      width: 1em; }
     .blog aside ul a {
       color: #2C2C2C; }
-      .blog aside ul a:hover, .blog aside ul a:focus {
-        color: #50E3C2; }
 
 @media (min-width: 1200px) {
   .blog .blog-post-content {
@@ -776,8 +794,6 @@ footer {
   .blog .blog-post {
     width: 100%;
     margin: -20rem auto 6rem; }
-  .blog .blog-post-comments h4 {
-    text-align: center; }
   .blog .comment-container .img-container {
     width: calc(30% - 2rem); }
   .blog .comment-container .comment-content {
@@ -792,6 +808,11 @@ footer {
       object-fit: cover; } }
 
 @media (max-width: 480px) {
+  .blog .blog-post-content h3 {
+    font-size: 2.5rem;
+    line-height: 1.2; }
+  .blog .blog-post-comments h4 {
+    text-align: center; }
   .blog .comment-container {
     flex-direction: column;
     align-items: center; }

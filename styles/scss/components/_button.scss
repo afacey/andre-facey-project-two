@@ -1,11 +1,15 @@
 .btn {
   display: inline-block;
-  background-color: $color-secondary;
+  padding: 15px;
+
   color: $color-light;
   font-family: $font-secondary;
-  letter-spacing: 3px;
-  padding: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  
+  background-color: $color-secondary;
   border: 5px solid transparent;
+  
   transition: border-color .3s;
 
   &:hover,
