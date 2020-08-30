@@ -13,6 +13,9 @@
       justify-content: space-between;
     }
 
+    // .wrapper becomes 80% of wrapper-large's width after the max-width is reached
+    .wrapper-large .wrapper { width: 80vw; }
+
     h2 {      
       color: $color-light;
       margin-bottom: 15rem;
