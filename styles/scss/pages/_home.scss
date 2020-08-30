@@ -12,7 +12,8 @@
       position: relative;
     }
 
-    
+    // .wrapper becomes 80% of wrapper-large's width after the max-width is reached
+    .wrapper-large .wrapper { width: 80vw; }
 
     .heading-text {
       position: absolute;
@@ -169,16 +170,15 @@
   // ------------------------------ CONTEST SECTION
   .contest {
     background-color: $color-light;
-    padding-bottom: 15rem;
 
     img {
-      // look better on smaller screen widths
+      // prevent image width from being too small on mobile screens
       min-height: 200px;
       object-fit: cover;
     }
 
     .wrapper {
-      padding-top: 15rem;
+      padding: $section-padding;
       text-align: center;
     }
 
@@ -189,15 +189,6 @@
 
 }
 // ------------------------------------------------ MEDIA QUERIES
-
-@media (min-width: 1200px) {
-  // TODO figure out margin width
-  .home .wrapper-large .wrapper {
-    // width: 100%;
-    // min-width: calc(1500px * .8);
-    // 1500px
-  }
-}
 
 // ----------------------------MAX-WIDTH 1024px
 @media (max-width: 1024px) {
@@ -228,7 +219,8 @@
     .spotlight,
     .gallery,
     .features,
-    .blogs { 
+    .blogs,
+    .contest .wrapper { 
       padding: $section-padding-mobile; 
     }
     
@@ -251,20 +243,7 @@
       }
     }
 
-    // ------------------800px HOME > MAIN > CONTEST
-    .contest {
-      padding-bottom: 8rem;
-
-      .wrapper { padding-top: 8rem; }
-    }    
-
-  }  
-}
-
-// ----------------------------MAX-WIDTH 768px
-@media (max-width: 768px) {
-  .home {
-    // ------------------768px HOME > BLOG
+    // ------------------800px HOME > MAIN > BLOG
     .blogs {
 
       .grid-container { grid-row-gap: 6rem; }
@@ -306,6 +285,8 @@
     h4,
     h5 {
       font-size: 3.2rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
     }
 
     // ------------------480px HOME > HEADER

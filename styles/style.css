@@ -492,6 +492,8 @@ footer {
   .home header .wrapper-large {
     flex: 1;
     position: relative; }
+  .home header .wrapper-large .wrapper {
+    width: 80vw; }
   .home header .heading-text {
     position: absolute;
     z-index: 10;
@@ -594,13 +596,12 @@ footer {
       box-shadow: -15px 15px 0 #50E3C2; }
 
 .home .contest {
-  background-color: #FAFFFE;
-  padding-bottom: 15rem; }
+  background-color: #FAFFFE; }
   .home .contest img {
     min-height: 200px;
     object-fit: cover; }
   .home .contest .wrapper {
-    padding-top: 15rem;
+    padding: 10rem 0;
     text-align: center; }
   .home .contest p {
     margin-bottom: 2rem; }
@@ -623,7 +624,8 @@ footer {
   .home .spotlight,
   .home .gallery,
   .home .features,
-  .home .blogs {
+  .home .blogs,
+  .home .contest .wrapper {
     padding: 8rem 0; }
   .home .spotlight .flex-container {
     flex-direction: column-reverse;
@@ -634,12 +636,6 @@ footer {
   .home .spotlight .spotlight-content {
     width: 100%;
     text-align: center; }
-  .home .contest {
-    padding-bottom: 8rem; }
-    .home .contest .wrapper {
-      padding-top: 8rem; } }
-
-@media (max-width: 768px) {
   .home .blogs .grid-container {
     grid-row-gap: 6rem; }
   .home .blogs .blog-container {
@@ -662,7 +658,9 @@ footer {
 @media (max-width: 480px) {
   .home h4,
   .home h5 {
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem; }
   .home header .main-nav .logo {
     font-size: 2.46rem; }
   .home header .heading-text {

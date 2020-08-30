@@ -4,14 +4,9 @@
   margin: 0 auto;
 }
 
-
 .wrapper-large {
   // suggested by Joey Chau of cohort 29
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (min-width: 1200px) {
-  // .wrapper-large .wrapper { width: calc(1200px * .8); }
 }
