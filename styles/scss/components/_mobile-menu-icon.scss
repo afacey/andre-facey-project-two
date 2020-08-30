@@ -22,8 +22,9 @@
   padding: 1rem;
   display: none;
   position: relative;
+  top: .5rem; // align better with logo
   z-index: 100;
-
+  
   &:hover { 
     cursor: pointer; 
   

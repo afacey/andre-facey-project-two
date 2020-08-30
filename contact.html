@@ -13,6 +13,7 @@
 </head>
 <body class="contact">
   <header>
+    <!-- skip-links -->
     <nav class="skip-links">
       <ul>
         <li><a href="#contact-form">Skip to contact form</a></li>
@@ -21,7 +22,7 @@
         <li><a href="#contact-address">Skip to office address</a></li>
       </ul>
     </nav><!-- ./skip-links -->
-    <div class="wrapper">
+    <div class="wrapper flex-container">
       <nav class="main-nav">
         <p class="logo">Beachstays</p>
 
@@ -40,7 +41,6 @@
         </ul>
       </nav>
   
-      <!-- TODO change to h2 -->
       <h2>Get in Touch</h2>
       
     </div>
@@ -50,20 +50,20 @@
   <main>
     <div class="wrapper">
       <div class="flex-container">
-
+        <!-- START of CONTACT FORM SECTION -->
         <section id="contact-form" class="contact-form">
           <form action="#">
             <fieldset>
               <div class="container"> <!-- chrome does not apply fieldset as a flex-container-->
-                
+                <!-- Name -->
                 <label class="sr-only" for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name">
-      
+                <!-- Email -->
                 <label class="sr-only" for="email">Email address</label>
                 <input type="email" id="email" name="email" placeholder="Email address">
               </div>
             </fieldset>
-    
+            <!-- Comment -->
             <label class="sr-only" for="comment">Comment</label>
             <textarea name="comment" id="comment" placeholder="Message" cols="30" rows="10"></textarea>
     
@@ -71,35 +71,49 @@
           </form>
     
       </section><!-- ./contact-form -->
-    
+        
+      <!-- START of ASIDE -->
         <aside>
+          <!-- Social Icons -->
           <ul id="contact-socials" class="socials">
+            
+            <!-- facebook -->
             <li>
               <a href="#">
                 <span class="sr-only">Click here to go to our facebook page</span>
                 <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
-              
             </li>
+
+            <!-- instagram -->
             <li>
               <a href="#">
                 <span class="sr-only">Click here to go to our instagram page</span>
-                <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
             </li>
+
+            <!-- twitter -->
             <li>
               <a href="#">
                 <span class="sr-only">Click here to go to our twitter page</span>
                 <i class="fab fa-twitter" aria-hidden="true"></i></a>
             </li>
+
+            <!-- whatsapp -->
             <li>
               <a href="#">
                 <span class="sr-only">Click here to contact us on whatsapp</span>
-                <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </a>
             </li>
-          </ul><!-- ./socials -->
 
+          </ul><!-- ./socials -->
+          
+          <!-- Contact Email -->
           <a id="contact-email" href="mailto:info@email.com">info@email.com</a>
           
+          <!-- Contact Address -->
           <address id="contact-address" class="address">
             <li>123 - 456 - 7890</li>
             <li>123 Queen Street West,</li>

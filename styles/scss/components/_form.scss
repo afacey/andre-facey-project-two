@@ -21,7 +21,6 @@ form {
     }
   }
 
-  // TODO adjust font sizing to style guide
   input,
   textarea {
     font-family: $font-primary;
@@ -30,7 +29,6 @@ form {
     letter-spacing: 2px;
   }
   
-  // TODO floating label if time permits
   input:focus,
   input:active {
     border-bottom-color: $color-secondary;

@@ -4,7 +4,7 @@
     background-image: url(../assets/contact-image-1.jpg);
     height: 50vh;
     
-    .wrapper {
+    .flex-container {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     
+    // -------------- MAIN > ASIDE > SOCIALS
     .socials { display: flex; }
 
     a { 
@@ -57,7 +58,7 @@
     a:hover {
       color: $color-highlight-1;
     }
-
+    // -------------- MAIN > ASIDE > ADDRESS
     address {
       font-size: 1.4rem;
       font-style: normal;
@@ -72,17 +73,20 @@
 // ------------------------------ MEDIA QUERIES
 @media (max-width: 768px) {
   .contact {
-
+    // --------------768px MAIN
     main { 
-      padding: 10rem 0 6rem; 
+      padding: 0 0 6rem; 
       .flex-container { flex-direction: column; }
     }
 
+    // --------------768px MAIN > CONTACT-FORM
     .contact-form {
       width: 100%;
+      margin-top: -5rem;
       margin-left: 0rem;
     }
 
+    // --------------768px MAIN > ASIDE
     aside {
       width: 100%;
       font-size: 2rem;
@@ -91,6 +95,7 @@
 
       a { padding: 1.5rem; }
 
+      // --------------768px MAIN > ASIDE > ADDRESS
       address { 
         font-size: inherit;
         text-align: center;
@@ -106,5 +111,17 @@
 } 
 
 @media (max-width: 480px) {
-  .contact .contact-form { padding: 25px; }
+  .contact {
+    // --------------480px HEADER
+    header {
+
+      h2 {
+        font-size: calc(3.1rem + 3.1vw);
+        margin-bottom: 7rem;
+      }
+    } 
+
+    // --------------480px MAIN > CONTACT-FORM
+    .contact-form { padding: 25px; }
+  } 
 }

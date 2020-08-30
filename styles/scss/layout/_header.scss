@@ -32,6 +32,7 @@ header {
       letter-spacing: 1px;
       position: relative;
 
+      // CREATE UNDERLINE FOR HOVER/FOCUS
       &::after {
         content: '';
         height: 2px;
@@ -54,11 +55,10 @@ header {
   }
 }
 
-
+// ------------------------------------------------------------ MEDIA QUERIES
 @media (max-width: 800px) {
-
   header {
-    /* ------COLLAPSED NAV MENU */
+    // --------------800px HEADER > MOBILE VIEW MENU ICON
     .menu-checkbox,
     .menu-icon { 
       display: block 
@@ -78,11 +78,11 @@ header {
 
       // move nav menu items down 50px to not align with the nav close button
       &:checked ~ ul {
-        padding: 50px 0;
+        padding: 25px 0;
         top: 0;
       }
     }
-
+    // --------------800px HEADER > MAIN-NAV
     .main-nav { 
 
       .logo { 
@@ -91,7 +91,8 @@ header {
         // prevent logo from "jumping" up when menu button is clicked
         padding-top: 2rem; 
       }
-      
+
+      // --------------800px HEADER > MAIN-NAV > NAV LIST (SLIDE DOWN MENU IN MOBILE VIEW)
       ul {
         // change flex direction to list items vertically and take up the full width
         background-color: $color-secondary;
@@ -105,11 +106,16 @@ header {
         flex-direction: column;
       }
 
+      // --------------800px HEADER > MAIN-NAV > NAV ITEMS
       li {
-        margin: 4rem 2rem;
+        margin: 2rem;
         text-align: center;
+
+        // create spacing at the top to avoid aligning with menu button
+        &:first-of-type { margin-top: 6rem } 
       }
 
+      // --------------800px HEADER > MAIN-NAV > NAV LINKS
       a {
         color: $color-light;
         padding: 1.5rem 20%;
@@ -122,7 +128,6 @@ header {
         }
 
         &::after { display: none }
-
       }
 
     }

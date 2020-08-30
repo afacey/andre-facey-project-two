@@ -270,7 +270,7 @@ h6 {
 
 .btn {
   display: inline-block;
-  padding: 15px;
+  padding: 0 10px;
   color: #FAFFFE;
   font-family: "Playfair Display SC", Georgia, serif;
   font-style: italic;
@@ -337,6 +337,7 @@ form {
   padding: 1rem;
   display: none;
   position: relative;
+  top: .5rem;
   z-index: 100; }
   .menu-icon:hover {
     cursor: pointer; }
@@ -425,46 +426,46 @@ header {
           opacity: 1; }
 
 @media (max-width: 800px) {
-  header {
-    /* ------COLLAPSED NAV MENU */ }
-    header .menu-checkbox,
-    header .menu-icon {
-      display: block; }
-    header .menu-checkbox:focus + .menu-icon,
-    header .menu-checkbox:checked:focus + .menu-icon {
-      outline: 1px solid #063974; }
-    header .menu-checkbox:checked + .menu-icon {
-      position: fixed;
-      right: 10%;
-      top: 2rem; }
-    header .menu-checkbox:checked ~ ul {
-      padding: 50px 0;
-      top: 0; }
-    header .main-nav .logo {
-      font-size: calc(1.6rem + 2vw);
-      padding-top: 2rem; }
-    header .main-nav ul {
-      background-color: #063974;
-      position: fixed;
-      top: -150%;
-      left: -0;
-      width: 100%;
-      z-index: 50;
-      transition: top .3s;
-      display: flex;
-      flex-direction: column; }
-    header .main-nav li {
-      margin: 4rem 2rem;
-      text-align: center; }
-    header .main-nav a {
-      color: #FAFFFE;
-      padding: 1.5rem 20%;
-      font-size: 2.2rem; }
-      header .main-nav a:hover, header .main-nav a:focus {
-        background-color: #FAFFFE;
-        color: #063974; }
-      header .main-nav a::after {
-        display: none; } }
+  header .menu-checkbox,
+  header .menu-icon {
+    display: block; }
+  header .menu-checkbox:focus + .menu-icon,
+  header .menu-checkbox:checked:focus + .menu-icon {
+    outline: 1px solid #063974; }
+  header .menu-checkbox:checked + .menu-icon {
+    position: fixed;
+    right: 10%;
+    top: 2rem; }
+  header .menu-checkbox:checked ~ ul {
+    padding: 25px 0;
+    top: 0; }
+  header .main-nav .logo {
+    font-size: calc(1.6rem + 2vw);
+    padding-top: 2rem; }
+  header .main-nav ul {
+    background-color: #063974;
+    position: fixed;
+    top: -150%;
+    left: -0;
+    width: 100%;
+    z-index: 50;
+    transition: top .3s;
+    display: flex;
+    flex-direction: column; }
+  header .main-nav li {
+    margin: 2rem;
+    text-align: center; }
+    header .main-nav li:first-of-type {
+      margin-top: 6rem; }
+  header .main-nav a {
+    color: #FAFFFE;
+    padding: 1.5rem 20%;
+    font-size: 2.2rem; }
+    header .main-nav a:hover, header .main-nav a:focus {
+      background-color: #FAFFFE;
+      color: #063974; }
+    header .main-nav a::after {
+      display: none; } }
 
 footer {
   background-color: #2C2C2C;
@@ -487,7 +488,7 @@ footer {
   margin: 0 auto; }
 
 .home header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)), url(../assets/home-image-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 10%, rgba(255, 255, 255, 0.5)), url(../assets/home-image-1.jpg);
   height: 65vh; }
   .home header .wrapper-large {
     flex: 1;
@@ -793,12 +794,12 @@ footer {
 
 @media (max-width: 768px) {
   .blog main {
-    padding-bottom: 4rem; }
+    padding: 0 0 4rem; }
     .blog main > .flex-container {
       flex-direction: column; }
   .blog .blog-post {
     width: 100%;
-    margin: -20rem auto 6rem; }
+    margin: -10rem auto 6rem; }
   .blog .comment-container .img-container {
     width: calc(30% - 2rem); }
   .blog .comment-container .comment-content {
@@ -806,13 +807,13 @@ footer {
   .blog aside {
     width: 80%;
     margin: 0 auto; }
-    .blog aside h6 {
-      margin-bottom: .6rem; }
     .blog aside img {
       max-height: 250px;
       object-fit: cover; } }
 
 @media (max-width: 480px) {
+  .blog header h2 {
+    font-size: calc(3.1rem + 3.2vw); }
   .blog .blog-post-content h3 {
     font-size: 2.5rem;
     line-height: 1.2; }
@@ -825,14 +826,12 @@ footer {
       width: 50%;
       margin-bottom: 1.6rem; }
     .blog .comment-container .comment-content {
-      width: 100%; }
-      .blog .comment-container .comment-content h5 {
-        margin-bottom: 1rem; } }
+      width: 100%; } }
 
 .contact header {
   background-image: url(../assets/contact-image-1.jpg);
   height: 50vh; }
-  .contact header .wrapper {
+  .contact header .flex-container {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -880,11 +879,12 @@ footer {
 
 @media (max-width: 768px) {
   .contact main {
-    padding: 10rem 0 6rem; }
+    padding: 0 0 6rem; }
     .contact main .flex-container {
       flex-direction: column; }
   .contact .contact-form {
     width: 100%;
+    margin-top: -5rem;
     margin-left: 0rem; }
   .contact aside {
     width: 100%;
@@ -900,5 +900,8 @@ footer {
         padding: inherit; } }
 
 @media (max-width: 480px) {
+  .contact header h2 {
+    font-size: calc(3.1rem + 3.1vw);
+    margin-bottom: 7rem; }
   .contact .contact-form {
     padding: 25px; } }
