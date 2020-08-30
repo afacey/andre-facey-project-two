@@ -21,16 +21,16 @@
     }
 
     h1 {
-      font-family: $font-secondary;
-      font-size: 10.12rem;
+      // font-family: $font-secondary;
+      // font-size: 10.12rem;
       color: $color-secondary;
       margin-left: -20px;
     }
     
     h3 { 
       color: $color-primary;
-      font-size: 5rem;
-      letter-spacing: 9px;
+      // font-size: 5rem;
+      // letter-spacing: 9px;
     }
 
     .img-container {
@@ -54,10 +54,13 @@
 
     &-content {
       width: calc(70%);
-      h2,
-      p {
-        margin-bottom: 2rem; 
+
+      h4 { 
+        color: $color-primary; 
+        margin-bottom: 0.5rem; 
       }
+
+      p { margin-bottom: 2rem; }
     }
     
     .img-container {
@@ -104,14 +107,14 @@
     }
 
     .icon-container {
-      margin-bottom: 1rem;
+      margin: 1rem 0;
 
       i.fa-stack-2x { color: $color-highlight-1;}
       i.fa-stack-1x { color: $color-light; }
     }
 
     .feature-content {
-      h3 {
+      h6 {
         color: $color-primary;
         margin-bottom: 1rem;
       }
@@ -138,9 +141,11 @@
       z-index: 5;
 
       .blog-post {
-        h2,
-        p {
-          margin-bottom: 2rem;
+        p { margin-bottom: 2rem; }
+
+        h5 { 
+          color: $color-primary; 
+          margin-bottom: .5rem;
         }
       }
 
@@ -189,9 +194,11 @@
       text-align: center;
     }
 
-    h2,
-    p {
-      margin-bottom: 2rem;
+    p { margin-bottom: 2rem; }
+
+    h5 { 
+      color: $color-primary; 
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -210,14 +217,14 @@
     header {
 
       h1 {
-        text-align: center;
+        font-size: calc(2rem + 8vw); 
+        margin-left: 0;
+      }
+
+      h3 {
         font-size: calc(1.5rem + 7vw);
+        text-align: center;
         left: 50%;
-        
-        span { 
-          font-size: calc(2rem + 8vw); 
-          margin-left: 0;
-        }
       }
       
       // intentionally removing image for design decision
@@ -307,7 +314,7 @@
       .main-nav .logo { font-size: 2.46rem }
 
       h1 { font-size: calc(1.5rem + 4vw); }
-      h1 span { font-size: calc(1.5rem + 5vw); }
+      h3 { font-size: calc(1.5rem + 5vw); }
     }
 
     // ------------------480px HOME > MAIN > GALLERY

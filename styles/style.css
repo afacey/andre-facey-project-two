@@ -229,7 +229,7 @@ body {
 
 h1 {
   font-family: "Playfair Display SC", Georgia, serif;
-  font-size: 8.7rem;
+  font-size: 11.12rem;
   line-height: 58px;
   font-style: italic; }
 
@@ -489,14 +489,10 @@ footer {
     left: 55%;
     transform: translateX(-50%); }
   .home header h1 {
-    font-family: "Playfair Display SC", Georgia, serif;
-    font-size: 10.12rem;
     color: #063974;
     margin-left: -20px; }
   .home header h3 {
-    color: #0C5F4C;
-    font-size: 5rem;
-    letter-spacing: 9px; }
+    color: #0C5F4C; }
   .home header .img-container {
     max-width: calc(1200px * .4);
     width: 55vh;
@@ -512,7 +508,9 @@ footer {
     justify-content: space-between; }
   .home .spotlight-content {
     width: calc(70%); }
-    .home .spotlight-content h2,
+    .home .spotlight-content h4 {
+      color: #0C5F4C;
+      margin-bottom: 0.5rem; }
     .home .spotlight-content p {
       margin-bottom: 2rem; }
   .home .spotlight .img-container {
@@ -543,12 +541,12 @@ footer {
     grid-template-columns: 5rem 1fr;
     gap: 1rem 2rem; }
   .home .features .icon-container {
-    margin-bottom: 1rem; }
+    margin: 1rem 0; }
     .home .features .icon-container i.fa-stack-2x {
       color: #50E3C2; }
     .home .features .icon-container i.fa-stack-1x {
       color: #FAFFFE; }
-  .home .features .feature-content h3 {
+  .home .features .feature-content h6 {
     color: #0C5F4C;
     margin-bottom: 1rem; }
 
@@ -563,9 +561,11 @@ footer {
     grid-template-columns: 1fr 10% 1fr;
     position: relative;
     z-index: 5; }
-    .home .blogs .blog-container .blog-post h2,
     .home .blogs .blog-container .blog-post p {
       margin-bottom: 2rem; }
+    .home .blogs .blog-container .blog-post h5 {
+      color: #0C5F4C;
+      margin-bottom: .5rem; }
     .home .blogs .blog-container:nth-of-type(odd) .blog-post {
       grid-column-start: 3;
       align-self: flex-end;
@@ -594,9 +594,11 @@ footer {
   .home .contest .wrapper {
     padding-top: 15rem;
     text-align: center; }
-  .home .contest h2,
   .home .contest p {
     margin-bottom: 2rem; }
+  .home .contest h5 {
+    color: #0C5F4C;
+    margin-bottom: 0.5rem; }
 
 @media (max-width: 1024px) {
   .home .blogs {
@@ -604,12 +606,12 @@ footer {
 
 @media (max-width: 800px) {
   .home header h1 {
-    text-align: center;
+    font-size: calc(2rem + 8vw);
+    margin-left: 0; }
+  .home header h3 {
     font-size: calc(1.5rem + 7vw);
+    text-align: center;
     left: 50%; }
-    .home header h1 span {
-      font-size: calc(2rem + 8vw);
-      margin-left: 0; }
   .home header .img-container {
     display: none; }
   .home .spotlight,
@@ -656,7 +658,7 @@ footer {
     font-size: 2.46rem; }
   .home header h1 {
     font-size: calc(1.5rem + 4vw); }
-  .home header h1 span {
+  .home header h3 {
     font-size: calc(1.5rem + 5vw); }
   .home .gallery .flex-container {
     flex-direction: column;
@@ -679,7 +681,7 @@ footer {
   .blog header .wrapper-large {
     flex: 1;
     position: relative; }
-  .blog header h1 {
+  .blog header h2 {
     color: #FAFFFE;
     font-size: 6rem;
     letter-spacing: 9px;
@@ -735,7 +737,7 @@ footer {
 .blog aside {
   width: calc(110 / 480 * 100%);
   font-size: 1.6rem; }
-  .blog aside h4 {
+  .blog aside h6 {
     color: #0C5F4C;
     margin: 2rem 0 1rem; }
   .blog aside p {
@@ -770,7 +772,7 @@ footer {
   .blog .blog-post {
     width: 100%;
     margin: -20rem auto 6rem; }
-  .blog .blog-post-comments h3 {
+  .blog .blog-post-comments h4 {
     text-align: center; }
   .blog .comment-container .img-container {
     width: calc(30% - 2rem); }
@@ -779,7 +781,7 @@ footer {
   .blog aside {
     width: 80%;
     margin: 0 auto; }
-    .blog aside h4 {
+    .blog aside h6 {
       margin-bottom: .6rem; }
     .blog aside img {
       max-height: 250px;
@@ -794,7 +796,7 @@ footer {
       margin-bottom: 1.6rem; }
     .blog .comment-container .comment-content {
       width: 100%; }
-      .blog .comment-container .comment-content h4 {
+      .blog .comment-container .comment-content h5 {
         margin-bottom: 1rem; } }
 
 .contact header {

@@ -9,7 +9,7 @@
       position: relative; 
     }
 
-    h1 {      
+    h2 {      
       color: $color-light;
       font-size: 6rem;
       letter-spacing: 9px;
@@ -86,7 +86,7 @@
     width: calc(110 / 480 * 100%);
     font-size: 1.6rem;
     
-    h4 {
+    h6 {
       color: $color-primary;
       margin: 2rem 0 1rem;
     }
@@ -148,7 +148,7 @@
     }
 
     // -------------- MAIN > BLOG-POST > COMMENTS
-    .blog-post-comments h3 { text-align: center;  }
+    .blog-post-comments h4 { text-align: center;  }
 
     .comment-container {
       .img-container { width: calc(30% - 2rem);}
@@ -160,7 +160,7 @@
       width: 80%;
       margin: 0 auto;
   
-      h4 { margin-bottom: .6rem;}
+      h6 { margin-bottom: .6rem;}
   
       img {
         max-height: 250px;
@@ -188,7 +188,7 @@
       .comment-content { 
         width: 100%; 
   
-        h4 { margin-bottom: 1rem;}
+        h5 { margin-bottom: 1rem;}
       }
       
     }
