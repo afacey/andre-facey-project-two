@@ -17,7 +17,14 @@
     }
   }
 
-  &:checked:focus + .menu-icon .menu-bars { outline-color: $color-light; }
+  // change color of 'X' when checkbox is checked + focused while visually hidden
+  &:checked:focus + .menu-icon .menu-bars { background-color: transparent; }
+  &:checked:focus + .menu-icon .menu-bars::before,
+  &:checked:focus + .menu-icon .menu-bars::after { 
+    background-color: $color-highlight-1;
+    top: 0;
+  }
+
 }
 
 .menu-icon {
@@ -26,18 +33,23 @@
   position: relative;
   top: .5rem; // align better with logo
   z-index: 100;
-  
-  &:hover { 
-    cursor: pointer; 
-  
-    ::before,
-    ::after {
-      transition: top .2s, transform .2s;
-    }
-    ::before { top: 1.4rem; }
-    ::after { top: -1.4rem; }
-  }
 }
+
+  .menu-icon:hover,
+  .menu-checkbox:focus + .menu-icon { 
+    cursor: pointer; 
+    
+    // change color of menu bars
+    .menu-bars,
+    .menu-bars::before,
+    .menu-bars::after {
+      background-color: $color-highlight-1;
+    }
+
+    // move top and bottom bar away from the middle bar
+    .menu-bars::before { top: 1.4rem; }
+    .menu-bars::after { top: -1.4rem; }
+  }
 
 /* ------------------- COLLAPSED NAV MENU - BARS */
 .menu-bars {
@@ -56,6 +68,7 @@
     display: inline-block;
     position: absolute;
     background-color: $color-light;
+    transition: top .2s, transform .2s;
   }
 
   &::before { top: 1rem; }

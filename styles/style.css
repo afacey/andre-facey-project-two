@@ -333,7 +333,11 @@ form {
       transform: rotate(135deg);
       top: 0; }
   .menu-checkbox:checked:focus + .menu-icon .menu-bars {
-    outline-color: #FAFFFE; }
+    background-color: transparent; }
+  .menu-checkbox:checked:focus + .menu-icon .menu-bars::before,
+  .menu-checkbox:checked:focus + .menu-icon .menu-bars::after {
+    background-color: #50E3C2;
+    top: 0; }
 
 .menu-icon {
   padding: 1rem;
@@ -341,15 +345,23 @@ form {
   position: relative;
   top: .5rem;
   z-index: 100; }
-  .menu-icon:hover {
-    cursor: pointer; }
-    .menu-icon:hover ::before,
-    .menu-icon:hover ::after {
-      transition: top .2s, transform .2s; }
-    .menu-icon:hover ::before {
-      top: 1.4rem; }
-    .menu-icon:hover ::after {
-      top: -1.4rem; }
+
+.menu-icon:hover,
+.menu-checkbox:focus + .menu-icon {
+  cursor: pointer; }
+  .menu-icon:hover .menu-bars,
+  .menu-icon:hover .menu-bars::before,
+  .menu-icon:hover .menu-bars::after,
+  .menu-checkbox:focus + .menu-icon .menu-bars,
+  .menu-checkbox:focus + .menu-icon .menu-bars::before,
+  .menu-checkbox:focus + .menu-icon .menu-bars::after {
+    background-color: #50E3C2; }
+  .menu-icon:hover .menu-bars::before,
+  .menu-checkbox:focus + .menu-icon .menu-bars::before {
+    top: 1.4rem; }
+  .menu-icon:hover .menu-bars::after,
+  .menu-checkbox:focus + .menu-icon .menu-bars::after {
+    top: -1.4rem; }
 
 /* ------------------- COLLAPSED NAV MENU - BARS */
 .menu-bars {
@@ -364,7 +376,8 @@ form {
     height: inherit;
     display: inline-block;
     position: absolute;
-    background-color: #FAFFFE; }
+    background-color: #FAFFFE;
+    transition: top .2s, transform .2s; }
   .menu-bars::before {
     top: 1rem; }
   .menu-bars::after {
@@ -431,9 +444,6 @@ header {
   header .menu-checkbox,
   header .menu-icon {
     display: block; }
-  header .menu-checkbox:focus + .menu-icon,
-  header .menu-checkbox:checked:focus + .menu-icon {
-    outline: 1px solid #FAFFFE; }
   header .menu-checkbox:checked + .menu-icon {
     position: fixed;
     right: 10%;
