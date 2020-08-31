@@ -556,6 +556,7 @@ footer {
     grid-template-columns: 5rem 1fr;
     gap: 1rem 2rem; }
   .home .features .icon-container {
+    font-size: 2rem;
     margin: 1rem 0; }
     .home .features .icon-container i.fa-stack-2x {
       color: #50E3C2; }

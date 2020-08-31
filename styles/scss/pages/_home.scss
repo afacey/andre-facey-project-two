@@ -104,6 +104,7 @@
     }
 
     .icon-container {
+      font-size: 2rem;
       margin: 1rem 0;
 
       i.fa-stack-2x { color: $color-highlight-1;}
@@ -326,7 +327,7 @@
     // ------------------480px HOME > MAIN > FEATURES
     .features {
       .grid-container { grid-template-columns: 1fr; }
-      .icon-container { margin: 0;}
+      .icon-container { margin: 0; }
 
       .feature-container {
         display: flex;
