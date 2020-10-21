@@ -10,6 +10,14 @@ h1 {
   font-size: 11.12rem;
   line-height: 58px;
   font-style: italic;
+  
+  span {
+    font-family: $font-primary;
+    font-size: 6.2rem;
+    text-transform: lowercase;
+    font-style: normal;
+    letter-spacing: 6.7px;
+  }
 }
 
 h2,
@@ -23,13 +31,17 @@ h6 {
 }
 
 h2 { 
-  font-size: 6.2rem;
-  letter-spacing: 9px;
+  font-size: 3.5rem;
+  letter-spacing: 3.8px;
+  // font-size: 6.2rem;
+  // letter-spacing: 9px;
 }
 
 h3 {
-  font-size: 6.2rem;
-  letter-spacing: 6.7px;
+  font-size: 3rem;
+  letter-spacing: 3.2px;
+  // font-size: 6.2rem;
+  // letter-spacing: 6.7px;
 }
 
 h4,
@@ -39,8 +51,8 @@ h5 {
 }
 
 h6 {
-  font-size: 3rem;
-  letter-spacing: 3.2px;
+  // font-size: 3rem;
+  // letter-spacing: 3.2px;
 }
 
 @media (max-width: 1024px) {

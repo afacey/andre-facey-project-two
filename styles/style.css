@@ -232,6 +232,12 @@ h1 {
   font-size: 11.12rem;
   line-height: 58px;
   font-style: italic; }
+  h1 span {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 6.2rem;
+    text-transform: lowercase;
+    font-style: normal;
+    letter-spacing: 6.7px; }
 
 h2,
 h3,
@@ -243,21 +249,17 @@ h6 {
   line-height: 58px; }
 
 h2 {
-  font-size: 6.2rem;
-  letter-spacing: 9px; }
+  font-size: 3.5rem;
+  letter-spacing: 3.8px; }
 
 h3 {
-  font-size: 6.2rem;
-  letter-spacing: 6.7px; }
+  font-size: 3rem;
+  letter-spacing: 3.2px; }
 
 h4,
 h5 {
   font-size: 3.5rem;
   letter-spacing: 3.8px; }
-
-h6 {
-  font-size: 3rem;
-  letter-spacing: 3.2px; }
 
 @media (max-width: 1024px) {
   body {
@@ -516,9 +518,10 @@ footer {
   .home header h1 {
     color: #063974;
     margin-left: -20px; }
-  .home header h3 {
-    color: #0C5F4C;
-    margin-bottom: 2rem; }
+    .home header h1 span {
+      display: block;
+      color: #0C5F4C;
+      margin-bottom: 2rem; }
   .home header .img-container {
     max-width: calc(1200px * .4);
     width: 55vh;
@@ -534,7 +537,7 @@ footer {
     justify-content: space-between; }
   .home .spotlight-content {
     width: calc(70%); }
-    .home .spotlight-content h4 {
+    .home .spotlight-content h2 {
       color: #0C5F4C; }
     .home .spotlight-content p {
       margin-bottom: 2rem; }
@@ -572,7 +575,7 @@ footer {
       color: #50E3C2; }
     .home .features .icon-container i.fa-stack-1x {
       color: #FAFFFE; }
-  .home .features .feature-content h6 {
+  .home .features .feature-content h3 {
     color: #0C5F4C; }
 
 .home .blogs {
@@ -588,7 +591,7 @@ footer {
     z-index: 5; }
     .home .blogs .blog-container .blog-post p {
       margin-bottom: 2rem; }
-    .home .blogs .blog-container .blog-post h5 {
+    .home .blogs .blog-container .blog-post h3 {
       color: #0C5F4C; }
     .home .blogs .blog-container:nth-of-type(odd) .blog-post {
       grid-column-start: 3;
@@ -619,7 +622,7 @@ footer {
     text-align: center; }
   .home .contest p {
     margin-bottom: 2rem; }
-  .home .contest h5 {
+  .home .contest h2 {
     color: #0C5F4C; }
 
 @media (max-width: 1024px) {
@@ -630,9 +633,9 @@ footer {
   .home header h1 {
     font-size: calc(2rem + 8vw);
     margin-left: 0; }
-  .home header h3 {
-    font-size: calc(1.5rem + 7vw);
-    left: 50%; }
+    .home header h1 span {
+      font-size: calc(1.5rem + 7vw);
+      left: 50%; }
   .home header .img-container {
     display: none; }
   .home .spotlight,
@@ -649,6 +652,15 @@ footer {
     margin-bottom: 3rem; }
   .home .spotlight .spotlight-content {
     width: 100%;
+    text-align: center; }
+  .home .features .grid-container {
+    grid-template-columns: 1fr; }
+  .home .features .icon-container {
+    margin: 0; }
+  .home .features .feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center; }
   .home .blogs .grid-container {
     grid-row-gap: 6rem; }
@@ -670,8 +682,7 @@ footer {
       margin-right: 0; } }
 
 @media (max-width: 480px) {
-  .home h4,
-  .home h5 {
+  .home h2 {
     font-size: 3.2rem;
     line-height: 1.4;
     margin-bottom: 1rem; }
@@ -684,25 +695,19 @@ footer {
     left: unset; }
   .home header h1 {
     font-size: calc(3.5rem + 1.5vw); }
-  .home header h3 {
-    font-size: calc(3.1rem + 1.5vw);
-    margin-bottom: 0; }
+    .home header h1 span {
+      font-size: calc(3.1rem + 1.5vw);
+      margin-bottom: 0; }
+  .home .spotlight .img-container {
+    width: calc(70% - 15px);
+    margin-bottom: 5rem; }
   .home .gallery .flex-container {
     flex-direction: column;
     align-items: center; }
   .home .gallery .img-container {
     width: 80%; }
     .home .gallery .img-container:not(:last-of-type) {
-      margin-bottom: 4rem; }
-  .home .features .grid-container {
-    grid-template-columns: 1fr; }
-  .home .features .icon-container {
-    margin: 0; }
-  .home .features .feature-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
+      margin-bottom: 4rem; } }
 
 .blog header {
   background-image: url(../assets/blog-image-1.jpg);
@@ -716,7 +721,7 @@ footer {
     justify-content: space-between; }
   .blog header .wrapper-large .wrapper {
     width: 80vw; }
-  .blog header h2 {
+  .blog header h1 {
     color: #FAFFFE;
     margin-bottom: 15rem; }
 
