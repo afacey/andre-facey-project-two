@@ -199,9 +199,6 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 img,
 button,
@@ -241,10 +238,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Lato", Arial, sans-serif;
   font-weight: bold;
   line-height: 58px; }
@@ -260,11 +254,6 @@ h2 {
 h3 {
   font-size: 3rem;
   letter-spacing: 3.2px; }
-
-h4,
-h5 {
-  font-size: 3.5rem;
-  letter-spacing: 3.8px; }
 
 @media (max-width: 1024px) {
   body {
@@ -854,7 +843,7 @@ footer {
       width: 100%; } }
 
 .contact header {
-  background-image: url(../assets/contact-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(250, 255, 254, 0.2), rgba(0, 0, 0, 0.1) 10%), url(../assets/contact-image-1.jpg);
   height: 50vh; }
   .contact header .flex-container {
     flex: 1;

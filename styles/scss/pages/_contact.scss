@@ -1,7 +1,7 @@
 .contact {
    // ------------------------------ HEADER
   header {
-    background-image: linear-gradient(to bottom, rgba($color-light, 0.2), url(../assets/contact-image-1.jpg);
+    background-image: linear-gradient(to bottom, rgba($color-light, 0.2), rgba(0, 0, 0, 0.1) 10%), url(../assets/contact-image-1.jpg);
     height: 50vh;
     
     .flex-container {
