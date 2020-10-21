@@ -227,18 +227,19 @@ body {
   line-height: 32px;
   letter-spacing: 2px; }
 
-h1 {
+.home h1 {
   font-family: "Playfair Display SC", Georgia, serif;
   font-size: 11.12rem;
-  line-height: 58px;
-  font-style: italic; }
-  h1 span {
+  font-style: italic;
+  letter-spacing: 1px; }
+  .home h1 span {
     font-family: "Lato", Arial, sans-serif;
     font-size: 6.2rem;
     text-transform: lowercase;
     font-style: normal;
     letter-spacing: 6.7px; }
 
+h1,
 h2,
 h3,
 h4,
@@ -247,6 +248,10 @@ h6 {
   font-family: "Lato", Arial, sans-serif;
   font-weight: bold;
   line-height: 58px; }
+
+h1 {
+  font-size: 6.2rem;
+  letter-spacing: 9px; }
 
 h2 {
   font-size: 3.5rem;
@@ -710,7 +715,7 @@ footer {
       margin-bottom: 4rem; } }
 
 .blog header {
-  background-image: url(../assets/blog-image-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(250, 255, 254, 0.2), rgba(0, 0, 0, 0.1) 10%), url(../assets/blog-image-1.jpg);
   height: 60vh; }
   .blog header .wrapper-large {
     flex: 1; }
@@ -749,7 +754,7 @@ footer {
     .blog .blog-post-content .img-container img {
       width: calc(100% - 10px);
       box-shadow: 15px 15px #50E3C2; }
-  .blog .blog-post-content h3 {
+  .blog .blog-post-content h2 {
     color: #0C5F4C;
     font-size: 3rem;
     letter-spacing: 3px; }
@@ -763,7 +768,7 @@ footer {
 .blog .blog-post-comments {
   display: flex;
   flex-direction: column; }
-  .blog .blog-post-comments h4 {
+  .blog .blog-post-comments h2 {
     font-size: 3rem;
     letter-spacing: 2px; }
 
@@ -771,7 +776,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 4rem 0; }
-  .blog .comment-container h5 {
+  .blog .comment-container h3 {
     color: #063974;
     letter-spacing: 2px;
     font-size: 2rem;
@@ -785,7 +790,7 @@ footer {
 .blog aside {
   width: calc(110 / 480 * 100%);
   font-size: 1.6rem; }
-  .blog aside h6 {
+  .blog aside h2 {
     color: #063974;
     font-size: 2.2rem; }
   .blog aside p {
@@ -832,12 +837,12 @@ footer {
       object-fit: cover; } }
 
 @media (max-width: 480px) {
-  .blog header h2 {
+  .blog header h1 {
     font-size: calc(3.1rem + 3.2vw); }
-  .blog .blog-post-content h3 {
+  .blog .blog-post-content h2 {
     font-size: 2.5rem;
     line-height: 1.2; }
-  .blog .blog-post-comments h4 {
+  .blog .blog-post-comments h3 {
     text-align: center; }
   .blog .comment-container {
     flex-direction: column;

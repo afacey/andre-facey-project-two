@@ -1,7 +1,7 @@
 .blog {
   // ------------------------------ HEADER
   header {
-    background-image: url(../assets/blog-image-1.jpg);
+    background-image: linear-gradient(to bottom, rgba($color-light, 0.2), rgba(0, 0, 0, 0.1) 10%), url(../assets/blog-image-1.jpg);
     height: 60vh;
 
     .wrapper-large { flex: 1;}
@@ -58,7 +58,7 @@
       }
     }
 
-    h3 { 
+    h2 { 
       color: $color-primary;
       font-size: 3rem;
       letter-spacing: 3px;
@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: column;
 
-    h4 { 
+    h2 { 
       font-size: 3rem;
       letter-spacing: 2px; 
     }
@@ -89,7 +89,7 @@
     justify-content: space-between;
     margin: 4rem 0;
 
-    h5 { 
+    h3 { 
       color: $color-secondary; 
       letter-spacing: 2px;
       font-size: 2rem;
@@ -106,7 +106,7 @@
     width: calc(110 / 480 * 100%);
     font-size: 1.6rem;
     
-    h6 {
+    h2 {
       color: $color-secondary;
       font-size: 2.2rem;
     }
@@ -193,16 +193,16 @@
   .blog {
 
     // --------------480px HEADER
-    header h2 { font-size: calc(3.1rem + 3.2vw);}
+    header h1 { font-size: calc(3.1rem + 3.2vw);}
 
     // --------------480px MAIN > BLOG-POST > CONTENT
-    .blog-post-content h3 { 
+    .blog-post-content h2 { 
       font-size: 2.5rem;
       line-height: 1.2;
     }
 
     // --------------480px MAIN > BLOG-POST > COMMENTS
-    .blog-post-comments h4 { text-align: center;  }
+    .blog-post-comments h3 { text-align: center;  }
 
     .comment-container {
       flex-direction: column;

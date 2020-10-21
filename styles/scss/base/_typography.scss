@@ -5,21 +5,25 @@ body {
   letter-spacing: 2px;
 }
 
-h1 {
-  font-family: $font-secondary;
-  font-size: 11.12rem;
-  line-height: 58px;
-  font-style: italic;
-  
-  span {
-    font-family: $font-primary;
-    font-size: 6.2rem;
-    text-transform: lowercase;
-    font-style: normal;
-    letter-spacing: 6.7px;
+.home {
+
+  h1 {
+    font-family: $font-secondary;
+    font-size: 11.12rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    
+    span {
+      font-family: $font-primary;
+      font-size: 6.2rem;
+      text-transform: lowercase;
+      font-style: normal;
+      letter-spacing: 6.7px;
+    }
   }
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -28,6 +32,11 @@ h6 {
   font-family: $font-primary;
   font-weight: bold;
   line-height: 58px;
+}
+
+h1 {
+  font-size: 6.2rem;
+  letter-spacing: 9px;
 }
 
 h2 { 
