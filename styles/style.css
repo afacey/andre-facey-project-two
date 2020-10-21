@@ -861,7 +861,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-  .contact header h2 {
+  .contact header h1 {
     color: #FAFFFE;
     margin-bottom: 15rem; }
 
@@ -925,7 +925,7 @@ footer {
         padding: inherit; } }
 
 @media (max-width: 480px) {
-  .contact header h2 {
+  .contact header h1 {
     font-size: calc(3.1rem + 3.1vw);
     margin-bottom: 7rem; }
   .contact .contact-form {
