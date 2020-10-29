@@ -886,9 +886,7 @@ footer {
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.2; }
-    .contact aside address li {
-      list-style: none; }
-    .contact aside address li:not(:last-of-type) {
+    .contact aside address p:not(:last-of-type) {
       margin-bottom: 5px; }
 
 @media (max-width: 768px) {
